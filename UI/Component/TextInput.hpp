@@ -2,6 +2,7 @@
 #include "Engine/GameEngine.hpp"
 #include "Engine/IObject.hpp"
 #include "Label.hpp"
+#include <functional>
 
 namespace Engine {
     class IInputHandler {

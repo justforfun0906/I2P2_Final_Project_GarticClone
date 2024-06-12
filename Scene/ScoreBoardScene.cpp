@@ -16,6 +16,7 @@
 #include <stdexcept>
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 struct Record {
     std::string name;
