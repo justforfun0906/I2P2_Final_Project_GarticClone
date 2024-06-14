@@ -1,8 +1,9 @@
 #include <allegro5/allegro_audio.h>
+#include <allegro5/allegro_primitives.h> // Add this line to include the necessary header file for al_draw_line
 #include <functional>
 #include <memory>
 #include <string>
-
+#include <iostream>
 #include "Engine/AudioHelper.hpp"
 #include "Engine/GameEngine.hpp"
 #include "UI/Component/ImageButton.hpp"
@@ -11,7 +12,10 @@
 #include "Engine/Resources.hpp"
 #include "UI/Component/Slider.hpp"
 #include "PlayScene.hpp"
-
+PlayScene::PlayScene() {
+    canvas.resize(canvasHeight, std::vector<ALLEGRO_COLOR>(canvasWidth, al_map_rgb(255, 255, 255))); // White background
+    // Other initialization...
+}
 void PlayScene::Initialize() {
     int w = Engine::GameEngine::GetInstance().GetScreenSize().x;
     int h = Engine::GameEngine::GetInstance().GetScreenSize().y;
@@ -32,9 +36,32 @@ void PlayScene::Terminate() {
 	IScene::Terminate();
 }
 void PlayScene::BackOnClick() {
+    std::cout<<"BackOnClick"<<std::endl;
     Engine::GameEngine::GetInstance().ChangeScene("start");
 }
+void PlayScene::OnMouseDown(int button, int mx, int my) {
+    std::cout<<"Mouse Down"<<std::endl;
+    if (button & 1) { // Left mouse button
+        if (mx >= 0 && mx < canvasWidth && my >= 0 && my < canvasHeight) {
+            for (int i = -2; i <= 2; ++i) {
+                for (int j = -2; j <= 2; ++j) {
+                    int px = mx + j;
+                    int py = my + i;
+                    if (px >= 0 && px < canvasWidth && py >= 0 && py < canvasHeight) {
+                        canvas[py][px] = al_map_rgb(0, 0, 0); // Change pixel color to black
+                    }
+                }
+            }
+        }
+    }
+}
+
 void PlayScene::Draw() const {
-    al_clear_to_color(al_map_rgb(255, 255, 255));
-    Group::Draw();
+    al_clear_to_color(al_map_rgb(255, 255, 255)); // Clear background
+    for (int y = 0; y < canvasHeight; ++y) {
+        for (int x = 0; x < canvasWidth; ++x) {
+            al_draw_pixel(x, y, canvas[y][x]);
+        }
+    }
+    Group::Draw(); // Draw other scene elements
 }

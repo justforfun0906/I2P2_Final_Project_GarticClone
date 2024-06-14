@@ -17,9 +17,8 @@
 [INFO] stopped audio (sample)
 [INFO] Created<sample_instance>: Resource/audios/select.ogg
 [INFO] Changed to play scene
-[INFO] stopped audio (sample)
-[INFO] Changed to start scene
 [INFO] Game Terminating...
+[INFO] stopped audio (sample)
 [INFO] Game terminated
 [INFO] Game end
 [INFO] Destroyed Resource<image>: stage-select/floor.png
