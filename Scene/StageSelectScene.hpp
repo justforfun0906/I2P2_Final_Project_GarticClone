@@ -11,7 +11,6 @@ public:
 	explicit StageSelectScene() = default;
 	void Initialize() override;
 	void Terminate() override;
-    void ScoreboardOnClick();
 	void BackOnClick(int stage);
 };
 
