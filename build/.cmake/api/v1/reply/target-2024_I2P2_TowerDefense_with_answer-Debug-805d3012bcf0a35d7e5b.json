@@ -33,7 +33,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 130,
+				"line" : 72,
 				"parent" : 0
 			},
 			{
@@ -51,7 +51,7 @@
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 127,
+				"line" : 69,
 				"parent" : 0
 			}
 		]
@@ -104,39 +104,14 @@
 				20,
 				22,
 				24,
-				26,
-				28,
-				30,
-				32,
-				34,
-				36,
-				38,
-				40,
-				42,
-				44,
-				46,
-				47,
-				49,
-				51,
-				53,
-				55,
-				57,
-				59,
-				61,
-				63,
-				65,
-				67,
-				69,
-				71,
-				73,
-				75,
-				77,
-				79,
-				81,
-				83,
-				85,
-				87,
-				89
+				25,
+				27,
+				29,
+				31,
+				33,
+				35,
+				37,
+				39
 			]
 		}
 	],
@@ -227,39 +202,14 @@
 				20,
 				22,
 				24,
-				26,
-				28,
-				30,
-				32,
-				34,
-				36,
-				38,
-				40,
-				42,
-				44,
-				46,
-				47,
-				49,
-				51,
-				53,
-				55,
-				57,
-				59,
-				61,
-				63,
-				65,
-				67,
-				69,
-				71,
-				73,
-				75,
-				77,
-				79,
-				81,
-				83,
-				85,
-				87,
-				89
+				25,
+				27,
+				29,
+				31,
+				33,
+				35,
+				37,
+				39
 			]
 		},
 		{
@@ -278,39 +228,14 @@
 				19,
 				21,
 				23,
-				25,
-				27,
-				29,
-				31,
-				33,
-				35,
-				37,
-				39,
-				41,
-				43,
-				45,
-				48,
-				50,
-				52,
-				54,
-				56,
-				58,
-				60,
-				62,
-				64,
-				66,
-				68,
-				70,
-				72,
-				74,
-				76,
-				78,
-				80,
-				82,
-				84,
-				86,
-				88,
-				90
+				26,
+				28,
+				30,
+				32,
+				34,
+				36,
+				38,
+				40
 			]
 		}
 	],
@@ -341,78 +266,12 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Bullet/Bullet.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Bullet/Bullet.hpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
 			"path" : "Engine/Collider.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"path" : "Engine/Collider.hpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "UI/Animation/DirtyEffect.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "UI/Animation/DirtyEffect.hpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "Enemy/Enemy.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Enemy/Enemy.hpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "UI/Animation/ExplosionEffect.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "UI/Animation/ExplosionEffect.hpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "Bullet/CustomBullet.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Bullet/CustomBullet.hpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "Bullet/FireBullet.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Bullet/FireBullet.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -506,28 +365,6 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Bullet/LaserBullet.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Bullet/LaserBullet.hpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "Turret/LaserTurret.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Turret/LaserTurret.hpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
 			"path" : "Engine/LOG.cpp",
 			"sourceGroupIndex" : 0
 		},
@@ -539,96 +376,8 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Scene/LoseScene.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Scene/LoseScene.hpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "Turret/MachineGunTurret.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Turret/MachineGunTurret.hpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "Turret/CustomTurret.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Turret/CustomTurret.hpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
 			"path" : "main.cpp",
 			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "Bullet/MissileBullet.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Bullet/MissileBullet.hpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "Turret/MissileTurret.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Turret/MissileTurret.hpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "UI/Animation/Plane.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "UI/Animation/Plane.hpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "Enemy/PlaneEnemy.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Enemy/PlaneEnemy.hpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "Scene/PlayScene.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Scene/PlayScene.hpp",
-			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
@@ -666,50 +415,6 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Enemy/SoldierEnemy.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Enemy/SoldierEnemy.hpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "Enemy/CustomEnemy.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Enemy/CustomEnemy.hpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "Enemy/CustomEnemy2.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Enemy/CustomEnemy2.hpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "Enemy/CustomEnemy3.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Enemy/CustomEnemy3.hpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
 			"path" : "Engine/Sprite.cpp",
 			"sourceGroupIndex" : 0
 		},
@@ -732,50 +437,6 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Enemy/TankEnemy.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Enemy/TankEnemy.hpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "Turret/Turret.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Turret/Turret.hpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "Turret/TurretButton.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Turret/TurretButton.hpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "Scene/WinScene.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Scene/WinScene.hpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
 			"path" : "Scene/StartScene.cpp",
 			"sourceGroupIndex" : 0
 		},
@@ -793,17 +454,6 @@
 		{
 			"backtrace" : 1,
 			"path" : "Scene/SettingsScene.hpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "Scene/ScoreBoardScene.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Scene/ScoreBoardScene.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{

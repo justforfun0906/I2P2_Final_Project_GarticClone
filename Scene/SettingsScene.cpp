@@ -6,7 +6,6 @@
 #include "Engine/GameEngine.hpp"
 #include "UI/Component/ImageButton.hpp"
 #include "UI/Component/Label.hpp"
-#include "PlayScene.hpp"
 #include "UI/Component/Slider.hpp"
 #include "SettingsScene.hpp"
 
@@ -16,16 +15,6 @@ void SettingsScene::Initialize() {
     int halfW = w / 2;
     int halfH = h / 2;
     Engine::ImageButton *btn;
-    /*btn = new Engine::ImageButton("stage-select/dirt.png", "stage-select/floor.png", halfW - 200, halfH / 2 - 50, 400,
-                                  100);
-    btn->SetOnClickCallback(std::bind(&SettingsScene::PlayOnClick, this, 1));
-    AddNewControlObject(btn);
-    AddNewObject(new Engine::Label("Stage 1", "pirulen.ttf", 48, halfW, halfH / 2, 0, 0, 0, 255, 0.5, 0.5));
-    btn = new Engine::ImageButton("stage-select/dirt.png", "stage-select/floor.png", halfW - 200, halfH * 3 / 2 - 50,
-                                  400, 100);
-    btn->SetOnClickCallback(std::bind(&SettingsScene::PlayOnClick, this, 2));
-    AddNewControlObject(btn);
-    AddNewObject(new Engine::Label("Stage 2", "pirulen.ttf", 48, halfW, halfH * 3 / 2, 0, 0, 0, 255, 0.5, 0.5));*/
     btn = new Engine::ImageButton("stage-select/dirt.png", "stage-select/floor.png", halfW - 200, halfH / 2 - 50, 400,
                                   100);
     btn->SetOnClickCallback(std::bind(&SettingsScene::BackOnClick, this, 1));
@@ -59,11 +48,6 @@ void SettingsScene::Terminate() {
     IScene::Terminate();
 }
 
-void SettingsScene::PlayOnClick(int stage) {
-    PlayScene *scene = dynamic_cast<PlayScene *>(Engine::GameEngine::GetInstance().GetScene("play"));
-    scene->MapId = stage;
-    Engine::GameEngine::GetInstance().ChangeScene("play");
-}
 
 void SettingsScene::BGMSlideOnValueChanged(float value) {
     AudioHelper::ChangeSampleVolume(bgmInstance, value);

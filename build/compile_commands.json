@@ -13,45 +13,9 @@
 },
 {
   "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Bullet/Bullet.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Bullet/Bullet.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Bullet/Bullet.cpp",
-  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Bullet/Bullet.cpp.o"
-},
-{
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
   "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Collider.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Engine/Collider.cpp",
   "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Engine/Collider.cpp",
   "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Collider.cpp.o"
-},
-{
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Animation/DirtyEffect.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/UI/Animation/DirtyEffect.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/UI/Animation/DirtyEffect.cpp",
-  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Animation/DirtyEffect.cpp.o"
-},
-{
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Enemy/Enemy.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Enemy/Enemy.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Enemy/Enemy.cpp",
-  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Enemy/Enemy.cpp.o"
-},
-{
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Animation/ExplosionEffect.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/UI/Animation/ExplosionEffect.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/UI/Animation/ExplosionEffect.cpp",
-  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Animation/ExplosionEffect.cpp.o"
-},
-{
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Bullet/CustomBullet.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Bullet/CustomBullet.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Bullet/CustomBullet.cpp",
-  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Bullet/CustomBullet.cpp.o"
-},
-{
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Bullet/FireBullet.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Bullet/FireBullet.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Bullet/FireBullet.cpp",
-  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Bullet/FireBullet.cpp.o"
 },
 {
   "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
@@ -103,75 +67,15 @@
 },
 {
   "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Bullet/LaserBullet.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Bullet/LaserBullet.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Bullet/LaserBullet.cpp",
-  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Bullet/LaserBullet.cpp.o"
-},
-{
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Turret/LaserTurret.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Turret/LaserTurret.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Turret/LaserTurret.cpp",
-  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Turret/LaserTurret.cpp.o"
-},
-{
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
   "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/LOG.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Engine/LOG.cpp",
   "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Engine/LOG.cpp",
   "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/LOG.cpp.o"
 },
 {
   "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/LoseScene.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Scene/LoseScene.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Scene/LoseScene.cpp",
-  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/LoseScene.cpp.o"
-},
-{
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Turret/MachineGunTurret.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Turret/MachineGunTurret.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Turret/MachineGunTurret.cpp",
-  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Turret/MachineGunTurret.cpp.o"
-},
-{
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Turret/CustomTurret.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Turret/CustomTurret.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Turret/CustomTurret.cpp",
-  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Turret/CustomTurret.cpp.o"
-},
-{
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
   "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/main.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/main.cpp",
   "file": "/home/justforfun/I2P2_Final_Project_GarticClone/main.cpp",
   "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/main.cpp.o"
-},
-{
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Bullet/MissileBullet.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Bullet/MissileBullet.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Bullet/MissileBullet.cpp",
-  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Bullet/MissileBullet.cpp.o"
-},
-{
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Turret/MissileTurret.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Turret/MissileTurret.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Turret/MissileTurret.cpp",
-  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Turret/MissileTurret.cpp.o"
-},
-{
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Animation/Plane.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/UI/Animation/Plane.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/UI/Animation/Plane.cpp",
-  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Animation/Plane.cpp.o"
-},
-{
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Enemy/PlaneEnemy.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Enemy/PlaneEnemy.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Enemy/PlaneEnemy.cpp",
-  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Enemy/PlaneEnemy.cpp.o"
-},
-{
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/PlayScene.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Scene/PlayScene.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Scene/PlayScene.cpp",
-  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/PlayScene.cpp.o"
 },
 {
   "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
@@ -193,30 +97,6 @@
 },
 {
   "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Enemy/SoldierEnemy.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Enemy/SoldierEnemy.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Enemy/SoldierEnemy.cpp",
-  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Enemy/SoldierEnemy.cpp.o"
-},
-{
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Enemy/CustomEnemy.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Enemy/CustomEnemy.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Enemy/CustomEnemy.cpp",
-  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Enemy/CustomEnemy.cpp.o"
-},
-{
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Enemy/CustomEnemy2.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Enemy/CustomEnemy2.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Enemy/CustomEnemy2.cpp",
-  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Enemy/CustomEnemy2.cpp.o"
-},
-{
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Enemy/CustomEnemy3.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Enemy/CustomEnemy3.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Enemy/CustomEnemy3.cpp",
-  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Enemy/CustomEnemy3.cpp.o"
-},
-{
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
   "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Sprite.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Engine/Sprite.cpp",
   "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Engine/Sprite.cpp",
   "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Sprite.cpp.o"
@@ -229,30 +109,6 @@
 },
 {
   "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Enemy/TankEnemy.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Enemy/TankEnemy.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Enemy/TankEnemy.cpp",
-  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Enemy/TankEnemy.cpp.o"
-},
-{
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Turret/Turret.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Turret/Turret.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Turret/Turret.cpp",
-  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Turret/Turret.cpp.o"
-},
-{
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Turret/TurretButton.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Turret/TurretButton.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Turret/TurretButton.cpp",
-  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Turret/TurretButton.cpp.o"
-},
-{
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/WinScene.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Scene/WinScene.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Scene/WinScene.cpp",
-  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/WinScene.cpp.o"
-},
-{
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
   "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/StartScene.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Scene/StartScene.cpp",
   "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Scene/StartScene.cpp",
   "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/StartScene.cpp.o"
@@ -262,12 +118,6 @@
   "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/SettingsScene.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Scene/SettingsScene.cpp",
   "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Scene/SettingsScene.cpp",
   "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/SettingsScene.cpp.o"
-},
-{
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/ScoreBoardScene.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Scene/ScoreBoardScene.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Scene/ScoreBoardScene.cpp",
-  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/ScoreBoardScene.cpp.o"
 },
 {
   "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
