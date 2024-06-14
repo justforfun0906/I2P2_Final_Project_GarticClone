@@ -103,12 +103,6 @@
 },
 {
   "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/StageSelectScene.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Scene/StageSelectScene.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Scene/StageSelectScene.cpp",
-  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/StageSelectScene.cpp.o"
-},
-{
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
   "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/StartScene.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Scene/StartScene.cpp",
   "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Scene/StartScene.cpp",
   "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/StartScene.cpp.o"
@@ -118,6 +112,18 @@
   "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/SettingsScene.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Scene/SettingsScene.cpp",
   "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Scene/SettingsScene.cpp",
   "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/SettingsScene.cpp.o"
+},
+{
+  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
+  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/StageSelectScene.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Scene/StageSelectScene.cpp",
+  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Scene/StageSelectScene.cpp",
+  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/StageSelectScene.cpp.o"
+},
+{
+  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
+  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/PlayScene.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Scene/PlayScene.cpp",
+  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Scene/PlayScene.cpp",
+  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/PlayScene.cpp.o"
 },
 {
   "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",

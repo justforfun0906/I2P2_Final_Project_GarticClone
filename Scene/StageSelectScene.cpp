@@ -19,9 +19,15 @@ void StageSelectScene::Initialize() {
     int halfH = h / 2;
     Engine::ImageButton* btn;
     btn = new Engine::ImageButton("stage-select/dirt.png", "stage-select/floor.png", halfW - 200, halfH * 3 / 2 - 50, 400, 100);
-    btn->SetOnClickCallback(std::bind(&StageSelectScene::BackOnClick, this, 1));
+    btn->SetOnClickCallback(std::bind(&StageSelectScene::BackOnClick, this));
     AddNewControlObject(btn);
     AddNewObject(new Engine::Label("Back", "pirulen.ttf", 48, halfW, halfH * 3 / 2, 0, 0, 0, 255, 0.5, 0.5));
+
+    // Adjusting the position of the Play button to be in the middle of the screen
+    btn = new Engine::ImageButton("stage-select/dirt.png", "stage-select/floor.png", halfW - 200, halfH - 50, 400, 100);
+    btn->SetOnClickCallback(std::bind(&StageSelectScene::PlayOnClick, this));
+    AddNewControlObject(btn);
+    AddNewObject(new Engine::Label("Play", "pirulen.ttf", 48, halfW, halfH, 0, 0, 0, 255, 0.5, 0.5));
 
     // Not safe if release resource while playing, however we only free while change scene, so it's fine.
 	bgmInstance = AudioHelper::PlaySample("select.ogg", true, AudioHelper::BGMVolume);
@@ -31,6 +37,9 @@ void StageSelectScene::Terminate() {
 	bgmInstance = std::shared_ptr<ALLEGRO_SAMPLE_INSTANCE>();
 	IScene::Terminate();
 }
-void StageSelectScene::BackOnClick(int stage) {
+void StageSelectScene::BackOnClick() {
     Engine::GameEngine::GetInstance().ChangeScene("start");
+}
+void StageSelectScene::PlayOnClick() {
+    Engine::GameEngine::GetInstance().ChangeScene("play");
 }

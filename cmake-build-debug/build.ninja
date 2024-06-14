@@ -168,13 +168,6 @@ build CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Sprite.cpp.o: CXX
   OBJECT_DIR = CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir
   OBJECT_FILE_DIR = CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine
 
-build CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/StageSelectScene.cpp.o: CXX_COMPILER__2024_I2P2_TowerDefense_with_answer_unscanned_Debug /home/justforfun/I2P2_Final_Project_GarticClone/Scene/StageSelectScene.cpp || cmake_object_order_depends_target_2024_I2P2_TowerDefense_with_answer
-  DEP_FILE = CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/StageSelectScene.cpp.o.d
-  FLAGS = -g -std=gnu++14
-  INCLUDES = -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib
-  OBJECT_DIR = CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir
-  OBJECT_FILE_DIR = CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene
-
 build CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/StartScene.cpp.o: CXX_COMPILER__2024_I2P2_TowerDefense_with_answer_unscanned_Debug /home/justforfun/I2P2_Final_Project_GarticClone/Scene/StartScene.cpp || cmake_object_order_depends_target_2024_I2P2_TowerDefense_with_answer
   DEP_FILE = CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/StartScene.cpp.o.d
   FLAGS = -g -std=gnu++14
@@ -184,6 +177,20 @@ build CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/StartScene.cpp.o: 
 
 build CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/SettingsScene.cpp.o: CXX_COMPILER__2024_I2P2_TowerDefense_with_answer_unscanned_Debug /home/justforfun/I2P2_Final_Project_GarticClone/Scene/SettingsScene.cpp || cmake_object_order_depends_target_2024_I2P2_TowerDefense_with_answer
   DEP_FILE = CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/SettingsScene.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib
+  OBJECT_DIR = CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir
+  OBJECT_FILE_DIR = CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene
+
+build CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/StageSelectScene.cpp.o: CXX_COMPILER__2024_I2P2_TowerDefense_with_answer_unscanned_Debug /home/justforfun/I2P2_Final_Project_GarticClone/Scene/StageSelectScene.cpp || cmake_object_order_depends_target_2024_I2P2_TowerDefense_with_answer
+  DEP_FILE = CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/StageSelectScene.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib
+  OBJECT_DIR = CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir
+  OBJECT_FILE_DIR = CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene
+
+build CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/PlayScene.cpp.o: CXX_COMPILER__2024_I2P2_TowerDefense_with_answer_unscanned_Debug /home/justforfun/I2P2_Final_Project_GarticClone/Scene/PlayScene.cpp || cmake_object_order_depends_target_2024_I2P2_TowerDefense_with_answer
+  DEP_FILE = CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/PlayScene.cpp.o.d
   FLAGS = -g -std=gnu++14
   INCLUDES = -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib
   OBJECT_DIR = CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir
@@ -204,7 +211,7 @@ build CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/TextInput.c
 #############################################
 # Link the executable 2024_I2P2_TowerDefense_with_answer
 
-build 2024_I2P2_TowerDefense_with_answer: CXX_EXECUTABLE_LINKER__2024_I2P2_TowerDefense_with_answer_Debug CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Allegro5Exception.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/AudioHelper.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Collider.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/GameEngine.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Group.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/IControl.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/Image.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/ImageButton.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/IObject.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/IScene.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/Label.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/LOG.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/main.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Point.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Resources.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/Slider.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Sprite.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/StageSelectScene.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/StartScene.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/SettingsScene.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/TextInput.cpp.o
+build 2024_I2P2_TowerDefense_with_answer: CXX_EXECUTABLE_LINKER__2024_I2P2_TowerDefense_with_answer_Debug CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Allegro5Exception.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/AudioHelper.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Collider.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/GameEngine.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Group.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/IControl.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/Image.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/ImageButton.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/IObject.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/IScene.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/Label.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/LOG.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/main.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Point.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Resources.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/Slider.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Sprite.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/StartScene.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/SettingsScene.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/StageSelectScene.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/PlayScene.cpp.o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/TextInput.cpp.o
   FLAGS = -g
   LINK_LIBRARIES = -lallegro_main  -lallegro_dialog  -lallegro_primitives  -lallegro_image  -lallegro_ttf  -lallegro_font  -lallegro_acodec  -lallegro_audio  -lallegro
   OBJECT_DIR = CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir
