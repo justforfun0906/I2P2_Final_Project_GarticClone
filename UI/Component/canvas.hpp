@@ -21,6 +21,7 @@ private:
     int paint_brush_size;
 public:
     bool eraser_switch = false;
+    bool bucket_switch = false;
     canvas();
     void OnMouseDown(int button, int mx, int my) override;
     void OnMouseMove(int mx, int my) override;

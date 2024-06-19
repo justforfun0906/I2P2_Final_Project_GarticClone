@@ -1,6 +1,7 @@
 #include "canvas.hpp"
 #include <allegro5/allegro_primitives.h>
 #include <iostream>
+#include <queue>
 #include "Engine/Point.hpp"
 #include "UI/Component/ImageButton.hpp" // Include the header file for Engine::ImageButton
 
@@ -14,6 +15,27 @@ void canvas::OnMouseDown(int button, int mx, int my) {
     if (button == 1) {
         if(mouseIn){
             isMousePressed = true;
+        }
+    }
+    if(bucket_switch){
+        //bfs to fill the enclosed area
+        int canvasX = mx/2;
+        int canvasY = my/2;
+        ALLEGRO_COLOR boundary_color = al_map_rgb(0, 255, 255);
+        ALLEGRO_COLOR fill_color = al_map_rgb(0, 0, 0);
+        std::queue<std::pair<int, int>> q;
+        q.push({canvasX, canvasY});
+        while(!q.empty()){
+            auto t = q.front();
+            int x = t.first, y = t.second;
+            q.pop();
+            if(x < 0 || x >= canvasWidth || y < 0 || y >= canvasHeight) continue;
+            if(!(canva[y][x] == boundary_color)) continue;
+            canva[y][x] = fill_color;
+            q.push({x+1, y});
+            q.push({x-1, y});
+            q.push({x, y+1});
+            q.push({x, y-1});
         }
     }
 }

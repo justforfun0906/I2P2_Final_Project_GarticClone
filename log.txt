@@ -20,27 +20,32 @@
 [INFO] Loaded Resource<image>: Resource/images/stage-select/bar.png scaled to 190x4
 [INFO] Loaded Resource<image>: Resource/images/stage-select/end.png
 [INFO] Loaded Resource<font>: Resource/fonts/pirulen.ttf with size 28
-[INFO] Loaded Resource<image>: Resource/images/eraser0.png scaled to 200x200
+[INFO] Loaded Resource<image>: Resource/images/eraser0.png scaled to 150x150
 [INFO] Loaded Resource<image>: Resource/images/eraser0.png
 [INFO] Loaded Resource<image>: Resource/images/eraser1.png
 [INFO] Created<sample_instance>: Resource/audios/select.ogg
+[INFO] Loaded Resource<image>: Resource/images/bucket0.png scaled to 150x150
+[INFO] Loaded Resource<image>: Resource/images/bucket0.png
+[INFO] Loaded Resource<image>: Resource/images/bucket1.png
 [INFO] Changed to play scene
-[INFO] stopped audio (sample)
-[INFO] Changed to start scene
 [INFO] Game Terminating...
+[INFO] stopped audio (sample)
 [INFO] Game terminated
 [INFO] Game end
-[INFO] Destroyed Resource<image>: eraser0.png
-[INFO] Destroyed Resource<image>: eraser0.png?200x200
-[INFO] Destroyed Resource<image>: stage-select/bar.png?190x4
-[INFO] Destroyed Resource<image>: stage-select/slider-blue.png
-[INFO] Destroyed Resource<image>: stage-select/floor.png
-[INFO] Destroyed Resource<image>: stage-select/dirt.png
-[INFO] Destroyed Resource<image>: eraser1.png
-[INFO] Destroyed Resource<image>: stage-select/end.png
-[INFO] Destroyed Resource<image>: stage-select/dirt.png?400x100
+[INFO] Destroyed Resource<image>: bucket1.png
 [INFO] Destroyed Resource<image>: stage-select/slider.png
+[INFO] Destroyed Resource<image>: stage-select/dirt.png?400x100
+[INFO] Destroyed Resource<image>: stage-select/end.png
 [INFO] Destroyed Resource<image>: icon.png
+[INFO] Destroyed Resource<image>: eraser1.png
+[INFO] Destroyed Resource<image>: stage-select/dirt.png
+[INFO] Destroyed Resource<image>: stage-select/floor.png
+[INFO] Destroyed Resource<image>: stage-select/slider-blue.png
+[INFO] Destroyed Resource<image>: eraser0.png
+[INFO] Destroyed Resource<image>: stage-select/bar.png?190x4
+[INFO] Destroyed Resource<image>: eraser0.png?150x150
+[INFO] Destroyed Resource<image>: bucket0.png?150x150
+[INFO] Destroyed Resource<image>: bucket0.png
 [INFO] Destroyed Resource<font>: pirulen.ttf?28
 [INFO] Destroyed Resource<font>: pirulen.ttf?48
 [INFO] Destroyed Resource<font>: pirulen.ttf?120

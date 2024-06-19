@@ -33,10 +33,14 @@ void PlayScene::Initialize() {
     new Engine::Label("brush size:", "pirulen.ttf", 28, w - 240, 40, 255, 255, 255, 255, 0.5, 0.5));
     // Not safe if release resource while playing, however we only free while change scene, so it's fine.
 	Engine::ImageButton* eraser_btn;
-    eraser_btn = new Engine::ImageButton("eraser0.png", "eraser1.png", "eraser1.png", w - 240, 150, 200, 200);
+    eraser_btn = new Engine::ImageButton("eraser0.png", "eraser1.png", "eraser1.png", w - 240, 150, 150, 150);
     eraser_btn->SetOnClickCallback(std::bind(&PlayScene::EraserOnClick, this));
     AddNewControlObject(eraser_btn);
     bgmInstance = AudioHelper::PlaySample("select.ogg", true, AudioHelper::BGMVolume);
+    Engine::ImageButton* bucket_btn;
+    bucket_btn = new Engine::ImageButton("bucket0.png", "bucket1.png", "bucket1.png", w - 240, 350, 150, 150);
+    bucket_btn->SetOnClickCallback(std::bind(&PlayScene::BucketOnClick, this));
+    AddNewControlObject(bucket_btn);
 }
 void PlayScene::OnKeyDown(int keyCode) {
     if (keyCode == ALLEGRO_KEY_ESCAPE) {
@@ -61,4 +65,9 @@ void PlayScene::PaintBrushSizeChanged(float value){
 }
 void PlayScene::EraserOnClick(){
     canva->eraser_switch = !canva->eraser_switch;
+    if(canva->bucket_switch)canva->bucket_switch = false;
+}
+void PlayScene::BucketOnClick(){
+    canva->bucket_switch = !canva->bucket_switch;
+    if(canva->eraser_switch)canva->eraser_switch = false;
 }
