@@ -18,11 +18,13 @@ private:
     const int canvasWidth = 600; // Example width
     const int canvasHeight = 400; // Example heigh
     bool mouseIn = false;
+    int paint_brush_size = 1;
 public:
     canvas();
     void OnMouseDown(int button, int mx, int my) override;
     void OnMouseMove(int mx, int my) override;
     void OnMouseUp(int button, int mx, int my) override;
     void Draw()const override;
+    void setBrushSize(int size);
 };
 #endif

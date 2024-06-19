@@ -28,10 +28,19 @@ void canvas::OnMouseMove(int mx, int my){
             // Adjust the mouse position to the canvas coordinate system
             int canvasX = mx/2;
             int canvasY = my/2;
-            // Ensure the mouse position is within the canvas bounds
-            if (canvasX >= 0 && canvasX < canvasWidth && canvasY >= 0 && canvasY < canvasHeight) {
-                // Set the pixel color to black
-                canva[canvasY][canvasX] = al_map_rgb(0, 0, 0);
+            // Paint a square area based on the brushSize
+            int brush_size = paint_brush_size;
+            std::cout<<"drawing with paint brush size "<<brush_size<<std::endl;
+            for (int offsetY = -brush_size/2; offsetY <= brush_size/2; ++offsetY) {
+                for (int offsetX = -brush_size/2; offsetX <= brush_size/2; ++offsetX) {
+                    int paintX = canvasX + offsetX;
+                    int paintY = canvasY + offsetY;
+                    // Ensure the paint position is within the canvas bounds
+                    if (paintX >= 0 && paintX < canvasWidth && paintY >= 0 && paintY < canvasHeight) {
+                        // Set the pixel color to black
+                        canva[paintY][paintX] = al_map_rgb(0, 0, 0);
+                    }
+                }
             }
         }
     } else {
@@ -39,7 +48,6 @@ void canvas::OnMouseMove(int mx, int my){
     }
 }
 void canvas::Draw() const{
-    std::cout<<"drawing canvas"<<std::endl;
     for (int y = 0; y < canvasHeight; ++y) {
         for (int x = 0; x < canvasWidth; ++x) {
             for (int dy = 0; dy < 2; ++dy) {
@@ -49,4 +57,8 @@ void canvas::Draw() const{
             }
         }
     }
+}
+void canvas::setBrushSize(int size){
+    paint_brush_size = size;
+    std::cout<<"now paint brush size is "<<paint_brush_size<<std::endl;
 }

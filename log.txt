@@ -11,14 +11,19 @@
 [INFO] Loaded Resource<font>: Resource/fonts/pirulen.ttf with size 48
 [INFO] Game initialized
 [INFO] Game start event loop
-[INFO] Loaded Resource<audio>: Resource/audios/select.ogg
-[INFO] Created<sample_instance>: Resource/audios/select.ogg
-[INFO] Changed to stage-select scene
-[INFO] stopped audio (sample)
 [INFO] Loaded Resource<image>: Resource/images/stage-select/slider.png
 [INFO] Loaded Resource<image>: Resource/images/stage-select/slider-blue.png
 [INFO] Loaded Resource<image>: Resource/images/stage-select/bar.png scaled to 190x4
 [INFO] Loaded Resource<image>: Resource/images/stage-select/end.png
+[INFO] Loaded Resource<font>: Resource/fonts/pirulen.ttf with size 28
+[INFO] Loaded Resource<audio>: Resource/audios/select.ogg
+[INFO] Created<sample_instance>: Resource/audios/select.ogg
+[INFO] Changed to settings scene
+[INFO] stopped audio (sample)
+[INFO] Changed to start scene
+[INFO] Created<sample_instance>: Resource/audios/select.ogg
+[INFO] Changed to stage-select scene
+[INFO] stopped audio (sample)
 [INFO] Created<sample_instance>: Resource/audios/select.ogg
 [INFO] Changed to play scene
 [INFO] Game Terminating...
@@ -33,6 +38,7 @@
 [INFO] Destroyed Resource<image>: stage-select/dirt.png?400x100
 [INFO] Destroyed Resource<image>: stage-select/slider.png
 [INFO] Destroyed Resource<image>: icon.png
+[INFO] Destroyed Resource<font>: pirulen.ttf?28
 [INFO] Destroyed Resource<font>: pirulen.ttf?48
 [INFO] Destroyed Resource<font>: pirulen.ttf?120
 [INFO] Destroyed<sample_instance>: select.ogg

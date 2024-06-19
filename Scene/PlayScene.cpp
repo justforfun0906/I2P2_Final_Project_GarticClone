@@ -13,6 +13,7 @@
 #include "UI/Component/Slider.hpp"
 #include "UI/Component/canvas.hpp"
 #include "PlayScene.hpp"
+canvas* canva = new canvas();
 void PlayScene::Initialize() {
     int w = Engine::GameEngine::GetInstance().GetScreenSize().x;
     int h = Engine::GameEngine::GetInstance().GetScreenSize().y;
@@ -20,10 +21,14 @@ void PlayScene::Initialize() {
     int halfH = h / 2;   
     al_clear_to_color(al_map_rgb(0, 0, 0));
     // Adjust the y-coordinate to place the button 100 pixels from the bottom of the screen
-    Slider* pen_brush = new Slider(w - 240, 40, 190, 4);
-    AddNewControlObject(pen_brush);
     canvas* canva = new canvas();
     AddNewControlObject(canva);
+    Slider* pen_brush = new Slider(w - 240, 40, 190, 4);
+    AddNewControlObject(pen_brush);
+    // Modify the existing line in PlayScene::Initialize
+    pen_brush->SetOnValueChangedCallback(
+        std::bind(&PlayScene::PaintBrushSizeChanged, this, std::placeholders::_1));
+    pen_brush->SetValue(0);
     // Not safe if release resource while playing, however we only free while change scene, so it's fine.
 	bgmInstance = AudioHelper::PlaySample("select.ogg", true, AudioHelper::BGMVolume);
 }
@@ -43,6 +48,10 @@ void PlayScene::Terminate() {
 void PlayScene::BackOnClick() {
     std::cout<<"BackOnClick"<<std::endl;
     Engine::GameEngine::GetInstance().ChangeScene("start");
+}
+void PlayScene::PaintBrushSizeChanged(float value){
+    float temp = 10*value;
+    canva->setBrushSize(1+(int)temp);
 }
 /*void PlayScene::Draw(){
     Group::Draw();
