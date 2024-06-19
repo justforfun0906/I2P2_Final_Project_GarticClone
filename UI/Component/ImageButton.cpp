@@ -1,6 +1,5 @@
 #include <functional>
 #include <memory>
-
 #include "Engine/Collider.hpp"
 #include "Engine/GameEngine.hpp"
 #include "Image.hpp"

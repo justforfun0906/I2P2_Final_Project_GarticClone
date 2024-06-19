@@ -3,7 +3,7 @@
 
 #include "Engine/Point.hpp"
 #include "Slider.hpp"
-
+#include <iostream>
 Slider::Slider(float x, float y, float w, float h) :
 	ImageButton("stage-select/slider.png", "stage-select/slider-blue.png", x, y),
 	Bar("stage-select/bar.png", x, y, w, h),
@@ -32,8 +32,10 @@ void Slider::SetValue(float value) {
 	}
 }
 void Slider::OnMouseDown(int button, int mx, int my) {
-	if ((button & 1) && mouseIn)
+	if ((button & 1) && mouseIn){
 		Down = true;
+		std::cout<<"Down"<<std::endl;
+	}
 }
 void Slider::OnMouseUp(int button, int mx, int my) {
 	Down = false;

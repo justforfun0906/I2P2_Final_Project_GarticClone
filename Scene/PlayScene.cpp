@@ -11,25 +11,20 @@
 #include "Engine/Point.hpp"
 #include "Engine/Resources.hpp"
 #include "UI/Component/Slider.hpp"
+#include "UI/Component/canvas.hpp"
 #include "PlayScene.hpp"
-PlayScene::PlayScene() {
-    canvas.resize(canvasHeight, std::vector<ALLEGRO_COLOR>(canvasWidth, al_map_rgb(255, 255, 255))); // White background
-    // Other initialization...
-}
 void PlayScene::Initialize() {
     int w = Engine::GameEngine::GetInstance().GetScreenSize().x;
     int h = Engine::GameEngine::GetInstance().GetScreenSize().y;
     int halfW = w / 2;
     int halfH = h / 2;   
     Engine::ImageButton* btn;
-    al_clear_to_color(al_map_rgb(255, 255, 255));
+    al_clear_to_color(al_map_rgb(0, 0, 0));
     // Adjust the y-coordinate to place the button 100 pixels from the bottom of the screen
-    /*
-    btn = new Engine::ImageButton("stage-select/dirt.png", "stage-select/floor.png", halfW - 200, h - 100 - 100, 400, 100);
-    btn->SetOnClickCallback(std::bind(&PlayScene::BackOnClick, this));
-    AddNewControlObject(btn);
-    AddNewObject(new Engine::Label("Back", "pirulen.ttf", 48, halfW, h - 100 - 50, 0, 0, 0, 255, 0.5, 0.5));
-    */
+    Slider* pen_brush = new Slider(w - 240, 40, 190, 4);
+    AddNewControlObject(pen_brush);
+    canvas* canva = new canvas();
+    AddNewControlObject(canva);
     // Not safe if release resource while playing, however we only free while change scene, so it's fine.
 	bgmInstance = AudioHelper::PlaySample("select.ogg", true, AudioHelper::BGMVolume);
 }
@@ -50,31 +45,6 @@ void PlayScene::BackOnClick() {
     std::cout<<"BackOnClick"<<std::endl;
     Engine::GameEngine::GetInstance().ChangeScene("start");
 }
-void PlayScene::OnMouseDown(int button, int mx, int my) {
-    if (button == 1) {
-        isMousePressed = true;
-    }
-}
-void PlayScene::OnMouseUp(int button, int mx, int my) {
-    if (button == 1) {
-        isMousePressed = false;
-    }
-}
-void PlayScene::OnMouseMove(int mx, int my) {
-    if (isMousePressed) {
-        // Ensure the mouse position is within the canvas bounds
-        if (mx >= 0 && mx < canvasWidth && my >= 0 && my < canvasHeight) {
-            // Update the canvas pixel color at the mouse position
-            canvas[my][mx] = al_map_rgb(0, 0, 0); // Example: change to black
-        }
-    }
-}
-void PlayScene::Draw() const {
-
-    for (int y = 0; y < canvasHeight; ++y) {
-        for (int x = 0; x < canvasWidth; ++x) {
-            al_draw_pixel(x, y, canvas[y][x]);
-        }
-    }
-    Group::Draw(); // Draw other scene elements
-}
+/*void PlayScene::Draw(){
+    Group::Draw();
+}*/

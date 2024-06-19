@@ -130,5 +130,11 @@
   "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/TextInput.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/UI/Component/TextInput.cpp",
   "file": "/home/justforfun/I2P2_Final_Project_GarticClone/UI/Component/TextInput.cpp",
   "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/TextInput.cpp.o"
+},
+{
+  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
+  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/canvas.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/UI/Component/canvas.cpp",
+  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/UI/Component/canvas.cpp",
+  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/canvas.cpp.o"
 }
 ]

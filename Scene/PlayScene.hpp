@@ -8,21 +8,13 @@
 class PlayScene final : public Engine::IScene {
 private:
 	std::shared_ptr<ALLEGRO_SAMPLE_INSTANCE> bgmInstance;
-    bool isMousePressed = false;
-    std::vector<std::vector<ALLEGRO_COLOR>> canvas;
-    const int canvasWidth = 1600; // Example width
-    const int canvasHeight = 800; // Example heigh
-    
 public:
-	explicit PlayScene();
+	explicit PlayScene() = default;
     void OnKeyDown(int keyCode) override;
 	void Initialize() override;
 	void Terminate() override;
 	void BackOnClick();
-    void Draw() const override;
-    void OnMouseDown(int button, int mx, int my);
-    void OnMouseMove(int mx, int my);
-    void OnMouseUp(int button, int mx, int my);
+    //void Draw() override;
 };
 
 #endif // STAGESELECTSCENE_HPP
