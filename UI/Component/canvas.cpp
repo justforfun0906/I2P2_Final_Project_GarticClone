@@ -11,6 +11,9 @@ canvas::canvas() {
     this->paint_brush_size = 1;
     canva.resize(canvasHeight, std::vector<ALLEGRO_COLOR>(canvasWidth, al_map_rgb(0, 255, 255)));
 }
+bool color_compare(ALLEGRO_COLOR a, ALLEGRO_COLOR b){
+    return a.r == b.r && a.b == b.b && a.g == b.g;
+}
 void canvas::OnMouseDown(int button, int mx, int my) {
     if (button == 1) {
         if(mouseIn){
@@ -30,7 +33,7 @@ void canvas::OnMouseDown(int button, int mx, int my) {
             int x = t.first, y = t.second;
             q.pop();
             if(x < 0 || x >= canvasWidth || y < 0 || y >= canvasHeight) continue;
-            if(!(canva[y][x] == boundary_color)) continue;
+            if(color_compare(canva[y][x],boundary_color)==0) continue;
             canva[y][x] = fill_color;
             q.push({x+1, y});
             q.push({x-1, y});
