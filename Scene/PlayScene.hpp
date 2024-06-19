@@ -4,10 +4,12 @@
 #include <memory>
 #include "Engine/IScene.hpp"
 #include <vector>
+#include "UI/Component/canvas.hpp"
 
-class PlayScene final : public Engine::IScene {
+class PlayScene final : public Engine::IScene{
 private:
 	std::shared_ptr<ALLEGRO_SAMPLE_INSTANCE> bgmInstance;
+
 public:
 	explicit PlayScene() = default;
     void OnKeyDown(int keyCode) override;

@@ -18,7 +18,6 @@ void PlayScene::Initialize() {
     int h = Engine::GameEngine::GetInstance().GetScreenSize().y;
     int halfW = w / 2;
     int halfH = h / 2;   
-    Engine::ImageButton* btn;
     al_clear_to_color(al_map_rgb(0, 0, 0));
     // Adjust the y-coordinate to place the button 100 pixels from the bottom of the screen
     Slider* pen_brush = new Slider(w - 240, 40, 190, 4);

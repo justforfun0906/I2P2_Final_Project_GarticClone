@@ -2,9 +2,12 @@
 #include <allegro5/allegro_primitives.h>
 #include <iostream>
 #include "Engine/Point.hpp"
+#include "UI/Component/ImageButton.hpp" // Include the header file for Engine::ImageButton
 
 canvas::canvas() {
-    canva.resize(canvasHeight, std::vector<ALLEGRO_COLOR>(canvasWidth, al_map_rgb(255, 255, 255)));
+    std::cout<<"creating canvas"<<std::endl;
+    this->visible = true;
+    canva.resize(canvasHeight, std::vector<ALLEGRO_COLOR>(canvasWidth, al_map_rgb(0, 255, 255)));
 }
 void canvas::OnMouseDown(int button, int mx, int my) {
     if (button == 1) {
@@ -35,7 +38,8 @@ void canvas::OnMouseMove(int mx, int my){
         mouseIn = false;
     }
 }
-void canvas::Draw(){
+void canvas::Draw() const{
+    std::cout<<"drawing canvas"<<std::endl;
     for (int y = 0; y < canvasHeight; ++y) {
         for (int x = 0; x < canvasWidth; ++x) {
             for (int dy = 0; dy < 2; ++dy) {
