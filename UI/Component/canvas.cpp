@@ -7,6 +7,7 @@
 canvas::canvas() {
     std::cout<<"creating canvas"<<std::endl;
     this->visible = true;
+    this->paint_brush_size = 1;
     canva.resize(canvasHeight, std::vector<ALLEGRO_COLOR>(canvasWidth, al_map_rgb(0, 255, 255)));
 }
 void canvas::OnMouseDown(int button, int mx, int my) {
@@ -29,7 +30,7 @@ void canvas::OnMouseMove(int mx, int my){
             int canvasX = mx/2;
             int canvasY = my/2;
             // Paint a square area based on the brushSize
-            int brush_size = paint_brush_size;
+            int brush_size = this->paint_brush_size;
             std::cout<<"drawing with paint brush size "<<brush_size<<std::endl;
             for (int offsetY = -brush_size/2; offsetY <= brush_size/2; ++offsetY) {
                 for (int offsetX = -brush_size/2; offsetX <= brush_size/2; ++offsetX) {
@@ -61,4 +62,7 @@ void canvas::Draw() const{
 void canvas::setBrushSize(int size){
     paint_brush_size = size;
     std::cout<<"now paint brush size is "<<paint_brush_size<<std::endl;
+}
+int canvas::getBrushSize() const{
+    return paint_brush_size;
 }

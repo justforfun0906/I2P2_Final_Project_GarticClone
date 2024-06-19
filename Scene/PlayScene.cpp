@@ -52,7 +52,5 @@ void PlayScene::BackOnClick() {
 void PlayScene::PaintBrushSizeChanged(float value){
     float temp = 10*value;
     canva->setBrushSize(1+(int)temp);
+    std::cout<<"paint brush size changed to "<<canva->getBrushSize()<<std::endl;
 }
-/*void PlayScene::Draw(){
-    Group::Draw();
-}*/

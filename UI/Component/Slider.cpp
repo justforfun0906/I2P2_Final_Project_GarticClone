@@ -23,15 +23,6 @@ void Slider::Draw() const {
 void Slider::SetOnValueChangedCallback(std::function<void(float value)> onValueChangedCallback) {
 	OnValueChangedCallback = onValueChangedCallback;
 }
-/*void Slider::SetValue(float value) {
-	if (this->value != value) {
-        // TODO: [HACKATHON-3-BUG] (5/5): Fix the function, so it can set the slider value correctly
-        Position.x = (1 - value) * Bar.Position.x + value * (Bar.Position.x + Bar.Size.x);
-		ImageButton::Position.x = Position.x;
-		if (OnValueChangedCallback)
-			OnValueChangedCallback(value);
-	}
-}*/
 void Slider::SetValue(float value) {
     if (this->value != value) {
         this->value = value; // Store the new value

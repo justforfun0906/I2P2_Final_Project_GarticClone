@@ -26,5 +26,6 @@ public:
     void OnMouseUp(int button, int mx, int my) override;
     void Draw()const override;
     void setBrushSize(int size);
+    int getBrushSize() const;
 };
 #endif
