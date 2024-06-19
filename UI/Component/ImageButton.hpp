@@ -20,6 +20,7 @@ namespace Engine {
 		std::shared_ptr<ALLEGRO_BITMAP> imgOut;
 		// The smart pointer that points to bitmap for mouse-in display.
 		std::shared_ptr<ALLEGRO_BITMAP> imgIn;
+		std::shared_ptr<ALLEGRO_BITMAP> imgHover;
 		// The callback function to call when button clicked.
 		std::function<void()> OnClickCallback;
 	public:
@@ -36,7 +37,7 @@ namespace Engine {
 		/// <param name="h">Height of the image, 0 indicates original size.</param>
 		/// <param name="anchorX">The centerX of the object. (0, 0) means top-left, while (1, 0) means top-right.</param>
 		/// <param name="anchorY">The centerY of the object. (0, 1) means bottom-left, while (1, 1) means bottom-right.</param>
-		explicit ImageButton(std::string img, std::string imgIn, float x, float y, float w = 0, float h = 0, float anchorX = 0, float anchorY = 0);
+		explicit ImageButton(std::string img, std::string imgIn, std::string imgHover, float x, float y, float w = 0, float h = 0, float anchorX = 0, float anchorY = 0);
 		/// <summary>
 		/// Set the callback function when clicked.
 		/// </summary>

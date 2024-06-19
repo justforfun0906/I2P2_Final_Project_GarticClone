@@ -4,6 +4,7 @@
 #include <memory>
 #include <string>
 #include <iostream>
+#include <string>
 #include "Engine/AudioHelper.hpp"
 #include "Engine/GameEngine.hpp"
 #include "UI/Component/ImageButton.hpp"
@@ -21,16 +22,21 @@ void PlayScene::Initialize() {
     int halfH = h / 2;   
     al_clear_to_color(al_map_rgb(0, 0, 0));
     // Adjust the y-coordinate to place the button 100 pixels from the bottom of the screen
-    canvas* canva = new canvas();
     AddNewControlObject(canva);
-    Slider* pen_brush = new Slider(w - 240, 40, 190, 4);
+    Slider* pen_brush = new Slider(w - 240, 100, 190, 4);
     AddNewControlObject(pen_brush);
     // Modify the existing line in PlayScene::Initialize
     pen_brush->SetOnValueChangedCallback(
         std::bind(&PlayScene::PaintBrushSizeChanged, this, std::placeholders::_1));
     pen_brush->SetValue(0);
+    AddNewObject(
+    new Engine::Label("brush size:", "pirulen.ttf", 28, w - 240, 40, 255, 255, 255, 255, 0.5, 0.5));
     // Not safe if release resource while playing, however we only free while change scene, so it's fine.
-	bgmInstance = AudioHelper::PlaySample("select.ogg", true, AudioHelper::BGMVolume);
+	Engine::ImageButton* eraser_btn;
+    eraser_btn = new Engine::ImageButton("eraser0.png", "eraser1.png", "eraser1.png", w - 240, 150, 200, 200);
+    eraser_btn->SetOnClickCallback(std::bind(&PlayScene::EraserOnClick, this));
+    AddNewControlObject(eraser_btn);
+    bgmInstance = AudioHelper::PlaySample("select.ogg", true, AudioHelper::BGMVolume);
 }
 void PlayScene::OnKeyDown(int keyCode) {
     if (keyCode == ALLEGRO_KEY_ESCAPE) {
@@ -52,5 +58,7 @@ void PlayScene::BackOnClick() {
 void PlayScene::PaintBrushSizeChanged(float value){
     float temp = 10*value;
     canva->setBrushSize(1+(int)temp);
-    std::cout<<"paint brush size changed to "<<canva->getBrushSize()<<std::endl;
+}
+void PlayScene::EraserOnClick(){
+    canva->eraser_switch = !canva->eraser_switch;
 }

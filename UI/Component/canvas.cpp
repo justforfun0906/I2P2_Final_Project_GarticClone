@@ -30,8 +30,7 @@ void canvas::OnMouseMove(int mx, int my){
             int canvasX = mx/2;
             int canvasY = my/2;
             // Paint a square area based on the brushSize
-            int brush_size = this->paint_brush_size;
-            std::cout<<"drawing with paint brush size "<<brush_size<<std::endl;
+            int brush_size = getBrushSize();
             for (int offsetY = -brush_size/2; offsetY <= brush_size/2; ++offsetY) {
                 for (int offsetX = -brush_size/2; offsetX <= brush_size/2; ++offsetX) {
                     int paintX = canvasX + offsetX;
@@ -39,7 +38,8 @@ void canvas::OnMouseMove(int mx, int my){
                     // Ensure the paint position is within the canvas bounds
                     if (paintX >= 0 && paintX < canvasWidth && paintY >= 0 && paintY < canvasHeight) {
                         // Set the pixel color to black
-                        canva[paintY][paintX] = al_map_rgb(0, 0, 0);
+                        if(eraser_switch==0)canva[paintY][paintX] = al_map_rgb(0, 0, 0);
+                        else canva[paintY][paintX] = al_map_rgb(0, 255, 255);
                     }
                 }
             }
@@ -60,9 +60,9 @@ void canvas::Draw() const{
     }
 }
 void canvas::setBrushSize(int size){
-    paint_brush_size = size;
+    this->paint_brush_size = size;
     std::cout<<"now paint brush size is "<<paint_brush_size<<std::endl;
 }
 int canvas::getBrushSize() const{
-    return paint_brush_size;
+    return this->paint_brush_size;
 }

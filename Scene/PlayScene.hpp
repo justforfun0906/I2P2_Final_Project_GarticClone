@@ -16,6 +16,7 @@ public:
 	void Initialize() override;
 	void Terminate() override;
 	void BackOnClick();
+    void EraserOnClick();
     void PaintBrushSizeChanged(float value);
     //void Draw() override;
 };
