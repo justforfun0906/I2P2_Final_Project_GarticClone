@@ -14,10 +14,9 @@ canvas::canvas() {
     al_clear_to_color(al_map_rgb(0, 255, 255)); // Initialize with a default color
     al_set_target_backbuffer(al_get_current_display()); // Reset target to backbuffer
 }
-bool color_compare(ALLEGRO_BITMAP *a, ALLEGRO_COLOR b,int x,int y){
-    return al_get_pixel(a,x,y).r == b.r 
-    && al_get_pixel(a,x,y).g == b.g 
-    && al_get_pixel(a,x,y).b == b.b;
+bool canvas::color_compare(ALLEGRO_COLOR b, int x, int y) {
+    ALLEGRO_COLOR c = al_get_pixel(canvasBitmap, x, y);
+    return c.r == b.r && c.g == b.g && c.b == b.b; // Ensure this comparison is valid
 }
 void canvas::OnMouseDown(int button, int mx, int my) {
     if (button == 1) {
@@ -27,26 +26,31 @@ void canvas::OnMouseDown(int button, int mx, int my) {
     }
     if(bucket_switch){
         //bfs to fill the enclosed area
-        int canvasX = mx/2;
-        int canvasY = my/2;
         al_set_target_bitmap(canvasBitmap);
         ALLEGRO_COLOR boundary_color = al_map_rgb(0, 255, 255);
         ALLEGRO_COLOR fill_color = al_map_rgb(0, 0, 0);
         std::queue<std::pair<int, int>> q;
-        q.push({canvasX, canvasY});
+        std::vector<std::vector<bool>> visited(canvasWidth, std::vector<bool>(canvasHeight, false));
+        q.push({mx/2, my/2});
         while(!q.empty()){
             auto t = q.front();
             int x = t.first, y = t.second;
             q.pop();
-            if(x < 0 || x >= canvasWidth || y < 0 || y >= canvasHeight) continue;
-            if(color_compare(canvasBitmap,boundary_color,x,y)) continue;
-            al_draw_pixel(canvasX, canvasY, fill_color);
-            al_set_target_backbuffer(al_get_current_display());
+            if(visited[x][y]|| x < 0 || x >= canvasWidth || y < 0 || y >= canvasHeight || color_compare(fill_color,x,y)) continue;
+            //if(!color_compare(boundary_color,x,y)) continue;
+            visited[x][y] = true;
+            al_draw_pixel(x, y, fill_color);
             q.push({x+1, y});
             q.push({x-1, y});
             q.push({x, y+1});
             q.push({x, y-1});
+            
+            // Add an exit condition to prevent freezing
+            if (q.size() > 10000) {
+                break;
+            }
         }
+        al_set_target_backbuffer(al_get_current_display());
     }
 }
 void canvas::OnMouseUp(int button, int mx, int my) {
@@ -65,6 +69,7 @@ void canvas::OnMouseMove(int mx, int my){
             int brush_size = getBrushSize();
             std::cout<<"brush size is "<<brush_size<<std::endl;
             al_set_target_bitmap(canvasBitmap);
+            
             for (int offsetY = -brush_size/2; offsetY <= brush_size/2; ++offsetY) {
                 for (int offsetX = -brush_size/2; offsetX <= brush_size/2; ++offsetX) {
                     int paintX = canvasX + offsetX;
@@ -74,10 +79,11 @@ void canvas::OnMouseMove(int mx, int my){
                         // Set the pixel color to black
                         if(eraser_switch==0)al_draw_pixel(paintX, paintY, al_map_rgb(0, 0, 0));
                         else al_draw_pixel(paintX, paintY, al_map_rgb(0, 255, 255));
-                        al_set_target_backbuffer(al_get_current_display());
+                        
                     }
                 }
             }
+            al_set_target_backbuffer(al_get_current_display());
         }
     } else {
         mouseIn = false;

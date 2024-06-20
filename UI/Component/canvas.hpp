@@ -15,8 +15,8 @@ private:
     ALLEGRO_BITMAP* canvasBitmap;
     bool visible = true;
     bool isMousePressed = false;
-    const int canvasWidth = 1200; // Example width
-    const int canvasHeight = 800; // Example heigh
+    const int canvasWidth = 600; // Example width
+    const int canvasHeight = 400; // Example heigh
     bool mouseIn = false;
     int paint_brush_size;
 public:
@@ -30,5 +30,6 @@ public:
     void Draw()const override;
     void setBrushSize(int size);
     int getBrushSize() const;
+    bool color_compare(ALLEGRO_COLOR b, int x, int y);
 };
 #endif
