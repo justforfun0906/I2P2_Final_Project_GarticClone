@@ -14,8 +14,9 @@
 #include "UI/Component/Slider.hpp"
 #include "UI/Component/canvas.hpp"
 #include "PlayScene.hpp"
-canvas* canva = new canvas();
+
 void PlayScene::Initialize() {
+    canva = new canvas();
     int w = Engine::GameEngine::GetInstance().GetScreenSize().x;
     int h = Engine::GameEngine::GetInstance().GetScreenSize().y;
     int halfW = w / 2;

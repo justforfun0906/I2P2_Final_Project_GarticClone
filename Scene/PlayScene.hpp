@@ -11,7 +11,8 @@ private:
 	std::shared_ptr<ALLEGRO_SAMPLE_INSTANCE> bgmInstance;
 
 public:
-	explicit PlayScene() = default;
+    canvas* canva;
+    explicit PlayScene() = default;
     void OnKeyDown(int keyCode) override;
 	void Initialize() override;
 	void Terminate() override;

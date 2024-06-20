@@ -12,17 +12,18 @@
 
 class canvas : public Engine::IControl  , public Engine::IObject{
 private:
+    ALLEGRO_BITMAP* canvasBitmap;
     bool visible = true;
     bool isMousePressed = false;
-    std::vector<std::vector<ALLEGRO_COLOR>> canva;
-    const int canvasWidth = 600; // Example width
-    const int canvasHeight = 400; // Example heigh
+    const int canvasWidth = 1200; // Example width
+    const int canvasHeight = 800; // Example heigh
     bool mouseIn = false;
     int paint_brush_size;
 public:
     bool eraser_switch = false;
     bool bucket_switch = false;
     canvas();
+    ~canvas();
     void OnMouseDown(int button, int mx, int my) override;
     void OnMouseMove(int mx, int my) override;
     void OnMouseUp(int button, int mx, int my) override;
