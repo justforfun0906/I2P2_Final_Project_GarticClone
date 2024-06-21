@@ -103,16 +103,16 @@ void canvas::OnMouseMove(int mx, int my){
     } else {
         mouseIn = false;
     }
-    ALLEGRO_BITMAP* Target = al_get_target_bitmap();
-    if(this->bucket_switch){
-        Target = ALLEGRO_BITMAP* bucketImage = Engine::Resources::GetInstance().GetBitmap("bucket1.png");
-    }else if(this->eraser_switch){
-        Target = ALLEGRO_BITMAP* eraserImage = Engine::Resources::GetInstance().GetBitmap("eraser1.png");
-    }else{
-        Target = ALLEGRO_BITMAP* paintBrushImage = Engine::Resources::GetInstance().GetBitmap("bucket1.png");
-    }
-    al_draw_scale_bitmap(Target, mx, my, 0);
-    //FIXME: Implement the mouse cursor change when the eraser or bucket tool is selected
+    // ALLEGRO_BITMAP* Target = al_get_target_bitmap();
+    // if(this->bucket_switch){
+    //     Target = ALLEGRO_BITMAP* bucketImage = Engine::Resources::GetInstance().GetBitmap("bucket1.png");
+    // }else if(this->eraser_switch){
+    //     Target = ALLEGRO_BITMAP* eraserImage = Engine::Resources::GetInstance().GetBitmap("eraser1.png");
+    // }else{
+    //     Target = ALLEGRO_BITMAP* paintBrushImage = Engine::Resources::GetInstance().GetBitmap("bucket1.png");
+    // }
+    // al_draw_scale_bitmap(Target, mx, my, 0);
+    // FIXME: Implement the mouse cursor change when the eraser or bucket tool is selected
 }
 void canvas::Draw() const {
     al_draw_scaled_bitmap(canvasBitmap,

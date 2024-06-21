@@ -196,6 +196,3 @@ void PlayScene::ExportOnClick(){
     outputFile.close();
     std::cout << "Export completed successfully.\n";
 }
-void PlayScene::OnMouseMove(int x, int y) {
-    
-}

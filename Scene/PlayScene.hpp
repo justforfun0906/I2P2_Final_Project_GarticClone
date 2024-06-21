@@ -14,7 +14,6 @@ public:
     canvas* canva;
     explicit PlayScene() = default;
     void OnKeyDown(int keyCode) override;
-    void OnMouseMove(int x, int y) override;
 	void Initialize() override;
 	void Terminate() override;
 	void BackOnClick();
