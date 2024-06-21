@@ -22,7 +22,7 @@ void PlayScene::Initialize() {
     int h = Engine::GameEngine::GetInstance().GetScreenSize().y;
     int halfW = w / 2;
     int halfH = h / 2;   
-    al_clear_to_color(al_map_rgb(0, 0, 0));
+    al_clear_to_color(al_map_rgb(255, 255, 255));
     // Adjust the y-coordinate to place the button 100 pixels from the bottom of the screen
     AddNewControlObject(canva);
     Slider* pen_brush = new Slider(w - 240, 100, 190, 4);
@@ -149,7 +149,7 @@ void PlayScene::ClearOnClick(){
     ALLEGRO_BITMAP* prevTarget = al_get_target_bitmap(); // Store the current target bitmap
 
     al_set_target_bitmap(bitmap); // Set the canvas bitmap as the target for drawing operations
-    al_clear_to_color(al_map_rgb(0, 0, 0)); // Clear the bitmap to white color
+    al_clear_to_color(al_map_rgb(255, 255, 255)); // Clear the bitmap to white color
 
     al_set_target_bitmap(prevTarget); // Restore the previous target bitmap
 }

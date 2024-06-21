@@ -13,7 +13,7 @@ void bucket_fill(ALLEGRO_BITMAP* bitmap, int start_x, int start_y, ALLEGRO_COLOR
         std::cerr << "Failed to lock bitmap for bucket fill!" << std::endl;
         return;
     }
-    //std::cout<<"fill color = "<<fill_color.r<<" "<<fill_color.g<<" "<<fill_color.b<<std::endl;
+
     int width = al_get_bitmap_width(bitmap);
     int height = al_get_bitmap_height(bitmap);
     ALLEGRO_COLOR target_color = al_get_pixel(bitmap, start_x, start_y);
@@ -33,7 +33,8 @@ void bucket_fill(ALLEGRO_BITMAP* bitmap, int start_x, int start_y, ALLEGRO_COLOR
         if (current_color.r == target_color.r && current_color.g == target_color.g && current_color.b == target_color.b) {
             uint32_t* pixel = (uint32_t*)((uint8_t*)locked_region->data + y * locked_region->pitch) + x;
             //convert rgba to uint32_t
-            *pixel = get_pixel(al_map_rgb(fill_color.r, fill_color.g, fill_color.b));
+            *pixel = get_pixel(al_map_rgba_f(fill_color.r, fill_color.g, fill_color.b, fill_color.a));
+            std::cout<<"filling color at"<<x<<" "<<y<<std::endl;
             q.push({x+1, y});
             q.push({x-1, y});
             q.push({x, y+1});
@@ -49,7 +50,7 @@ canvas::canvas() {
     this->paint_brush_size = 1;
     canvasBitmap = al_create_bitmap(canvasWidth, canvasHeight);
     al_set_target_bitmap(canvasBitmap);
-    al_clear_to_color(al_map_rgb(0, 0, 0)); // Initialize with a default color
+    al_clear_to_color(al_map_rgb(255, 255, 255)); // Initialize with a default color
     al_set_target_backbuffer(al_get_current_display()); // Reset target to backbuffer
 }
 bool canvas::color_compare(ALLEGRO_COLOR b, int x, int y) {
@@ -58,7 +59,7 @@ bool canvas::color_compare(ALLEGRO_COLOR b, int x, int y) {
 }
 void canvas::OnMouseDown(int button, int mx, int my) {
     if (button == 1) {
-        if(mouseIn && !bucket_switch){
+        if(mouseIn){
             isMousePressed = true;
         }
         if(bucket_switch){
