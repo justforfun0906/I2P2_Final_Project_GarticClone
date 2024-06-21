@@ -1,7 +1,7 @@
 [INFO] Game Initializing...
 [INFO] Loaded Resource<image>: Resource/images/icon.png
 [INFO] Loaded window icon from: icon.png
-[INFO] There are total 10 supported mouse buttons
+[INFO] There are total 1 supported mouse buttons
 [INFO] Allegro5 initialized
 [INFO] Game begin
 [INFO] Loaded Resource<font>: Resource/fonts/pirulen.ttf with size 120
@@ -27,4 +27,29 @@
 [INFO] Loaded Resource<image>: Resource/images/bucket0.png scaled to 150x150
 [INFO] Loaded Resource<image>: Resource/images/bucket0.png
 [INFO] Loaded Resource<image>: Resource/images/bucket1.png
+[INFO] Loaded Resource<image>: Resource/images/eraser0.png scaled to 50x50
 [INFO] Changed to play scene
+[INFO] Game Terminating...
+[INFO] stopped audio (sample)
+[INFO] Game terminated
+[INFO] Game end
+[INFO] Destroyed Resource<image>: bucket0.png
+[INFO] Destroyed Resource<image>: stage-select/end.png
+[INFO] Destroyed Resource<image>: eraser0.png
+[INFO] Destroyed Resource<image>: stage-select/bar.png?190x4
+[INFO] Destroyed Resource<image>: bucket0.png?150x150
+[INFO] Destroyed Resource<image>: eraser1.png
+[INFO] Destroyed Resource<image>: bucket1.png
+[INFO] Destroyed Resource<image>: stage-select/floor.png
+[INFO] Destroyed Resource<image>: eraser0.png?150x150
+[INFO] Destroyed Resource<image>: stage-select/slider-blue.png
+[INFO] Destroyed Resource<image>: stage-select/dirt.png
+[INFO] Destroyed Resource<image>: stage-select/dirt.png?400x100
+[INFO] Destroyed Resource<image>: eraser0.png?50x50
+[INFO] Destroyed Resource<image>: stage-select/slider.png
+[INFO] Destroyed Resource<image>: icon.png
+[INFO] Destroyed Resource<font>: pirulen.ttf?48
+[INFO] Destroyed Resource<font>: pirulen.ttf?28
+[INFO] Destroyed Resource<font>: pirulen.ttf?120
+[INFO] Destroyed<sample_instance>: select.ogg
+[INFO] Destroyed Resource<audio>: select.ogg

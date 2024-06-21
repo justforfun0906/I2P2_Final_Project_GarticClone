@@ -20,6 +20,11 @@ public:
     void EraserOnClick();
     void BucketOnClick();
     void PaintBrushSizeChanged(float value);
+
+    void RedBrushOnClick();
+    void BlackBrushOnClick();
+    void BlueBrushOnClick();
+    void GreenBrushOnClick();
     //void Draw() override;
 };
 

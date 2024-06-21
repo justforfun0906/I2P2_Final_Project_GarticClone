@@ -43,10 +43,41 @@ void PlayScene::Initialize() {
     bucket_btn->SetOnClickCallback(std::bind(&PlayScene::BucketOnClick, this));
     AddNewControlObject(bucket_btn);
 
-    // Engine::ImageButton* red_brush_btn, black_brush_btn, blue_brush_btn, green_brush_btn;
-    // eraser_btn = new Engine::ImageButton("eraser0.png", "eraser1.png", "eraser1.png", w - 240, 150, 150, 150);
-    // eraser_btn->SetOnClickCallback(std::bind(&PlayScene::EraserOnClick, this));
-    // AddNewControlObject(eraser_btn);
+    // Assuming each button is 150px wide and we want a 10px margin between them
+    Engine::ImageButton* red_brush_btn;
+    Engine::ImageButton* black_brush_btn;
+    Engine::ImageButton* blue_brush_btn;
+    Engine::ImageButton* green_brush_btn;
+    // Adjust the width of the color buttons
+    int buttonWidth = 50;
+    int buttonHeight = 50; // Assuming you want to keep the height the same
+    int margin = 30;
+    // Position the first color button under the bucket button with a margin
+    int startingX = w - 350; // Align with the bucket button's x position
+    int yPosition = 350 + 150 + margin; // Bucket button's y position + its height + margin
+
+    // Update the creation of color buttons with new dimensions and positions
+    red_brush_btn = new Engine::ImageButton("eraser0.png", "eraser1.png", "eraser1.png", startingX, yPosition, buttonWidth, buttonHeight);
+    red_brush_btn->SetOnClickCallback(std::bind(&PlayScene::RedBrushOnClick, this)); // Assuming you want to use BucketOnClick, adjust if needed
+    AddNewControlObject(red_brush_btn);
+
+    startingX += buttonWidth + margin; // Move to the right for the next button
+
+    black_brush_btn = new Engine::ImageButton("eraser0.png", "eraser1.png", "eraser1.png", startingX, yPosition, buttonWidth, buttonHeight);
+    black_brush_btn->SetOnClickCallback(std::bind(&PlayScene::BlackBrushOnClick, this));
+    AddNewControlObject(black_brush_btn);
+
+    startingX += buttonWidth + margin; // Move to the right for the next button
+
+    blue_brush_btn = new Engine::ImageButton("eraser0.png", "eraser1.png", "eraser1.png", startingX, yPosition, buttonWidth, buttonHeight);
+    blue_brush_btn->SetOnClickCallback(std::bind(&PlayScene::BlueBrushOnClick, this));
+    AddNewControlObject(blue_brush_btn);
+
+    startingX += buttonWidth + margin; // Move to the right for the last button
+
+    green_brush_btn = new Engine::ImageButton("eraser0.png", "eraser1.png", "eraser1.png", startingX, yPosition, buttonWidth, buttonHeight);
+    green_brush_btn->SetOnClickCallback(std::bind(&PlayScene::GreenBrushOnClick, this));
+    AddNewControlObject(green_brush_btn);
 }
 void PlayScene::OnKeyDown(int keyCode) {
     if (keyCode == ALLEGRO_KEY_ESCAPE) {
@@ -76,4 +107,17 @@ void PlayScene::EraserOnClick(){
 void PlayScene::BucketOnClick(){
     canva->bucket_switch = !canva->bucket_switch;
     if(canva->eraser_switch)canva->eraser_switch = false;
+}
+
+void PlayScene::RedBrushOnClick(){
+    canva->setBrushColor(al_map_rgb(255,0,0));
+}
+void PlayScene::BlackBrushOnClick(){
+    canva->setBrushColor(al_map_rgb(0,0,0));
+}
+void PlayScene::BlueBrushOnClick(){
+    canva->setBrushColor(al_map_rgb(0,0,255));
+}
+void PlayScene::GreenBrushOnClick(){
+    canva->setBrushColor(al_map_rgb(0,255,0));
 }
