@@ -27,12 +27,27 @@
 [INFO] Loaded Resource<image>: Resource/images/bucket0.png scaled to 150x150
 [INFO] Loaded Resource<image>: Resource/images/bucket0.png
 [INFO] Loaded Resource<image>: Resource/images/bucket1.png
-[INFO] Loaded Resource<image>: Resource/images/eraser0.png scaled to 50x50
+[INFO] Loaded Resource<image>: Resource/images/red_btn.png scaled to 50x50
+[INFO] Loaded Resource<image>: Resource/images/red_btn.png
+[INFO] Loaded Resource<image>: Resource/images/black_btn.png scaled to 50x50
+[INFO] Loaded Resource<image>: Resource/images/black_btn.png
+[INFO] Loaded Resource<image>: Resource/images/blue_btn.png scaled to 50x50
+[INFO] Loaded Resource<image>: Resource/images/blue_btn.png
+[INFO] Loaded Resource<image>: Resource/images/green_btn.png scaled to 50x50
+[INFO] Loaded Resource<image>: Resource/images/green_btn.png
 [INFO] Changed to play scene
 [INFO] Game Terminating...
 [INFO] stopped audio (sample)
 [INFO] Game terminated
 [INFO] Game end
+[INFO] Destroyed Resource<image>: green_btn.png
+[INFO] Destroyed Resource<image>: green_btn.png?50x50
+[INFO] Destroyed Resource<image>: blue_btn.png
+[INFO] Destroyed Resource<image>: blue_btn.png?50x50
+[INFO] Destroyed Resource<image>: black_btn.png
+[INFO] Destroyed Resource<image>: black_btn.png?50x50
+[INFO] Destroyed Resource<image>: red_btn.png?50x50
+[INFO] Destroyed Resource<image>: red_btn.png
 [INFO] Destroyed Resource<image>: bucket0.png
 [INFO] Destroyed Resource<image>: stage-select/end.png
 [INFO] Destroyed Resource<image>: eraser0.png
@@ -45,7 +60,6 @@
 [INFO] Destroyed Resource<image>: stage-select/slider-blue.png
 [INFO] Destroyed Resource<image>: stage-select/dirt.png
 [INFO] Destroyed Resource<image>: stage-select/dirt.png?400x100
-[INFO] Destroyed Resource<image>: eraser0.png?50x50
 [INFO] Destroyed Resource<image>: stage-select/slider.png
 [INFO] Destroyed Resource<image>: icon.png
 [INFO] Destroyed Resource<font>: pirulen.ttf?48

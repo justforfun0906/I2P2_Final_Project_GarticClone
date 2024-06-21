@@ -57,25 +57,25 @@ void PlayScene::Initialize() {
     int yPosition = 350 + 150 + margin; // Bucket button's y position + its height + margin
 
     // Update the creation of color buttons with new dimensions and positions
-    red_brush_btn = new Engine::ImageButton("eraser0.png", "eraser1.png", "eraser1.png", startingX, yPosition, buttonWidth, buttonHeight);
+    red_brush_btn = new Engine::ImageButton("red_btn.png", "red_btn.png", "red_btn.png", startingX, yPosition, buttonWidth, buttonHeight);
     red_brush_btn->SetOnClickCallback(std::bind(&PlayScene::RedBrushOnClick, this)); // Assuming you want to use BucketOnClick, adjust if needed
     AddNewControlObject(red_brush_btn);
 
     startingX += buttonWidth + margin; // Move to the right for the next button
 
-    black_brush_btn = new Engine::ImageButton("eraser0.png", "eraser1.png", "eraser1.png", startingX, yPosition, buttonWidth, buttonHeight);
+    black_brush_btn = new Engine::ImageButton("black_btn.png", "black_btn.png", "black_btn.png", startingX, yPosition, buttonWidth, buttonHeight);
     black_brush_btn->SetOnClickCallback(std::bind(&PlayScene::BlackBrushOnClick, this));
     AddNewControlObject(black_brush_btn);
 
     startingX += buttonWidth + margin; // Move to the right for the next button
 
-    blue_brush_btn = new Engine::ImageButton("eraser0.png", "eraser1.png", "eraser1.png", startingX, yPosition, buttonWidth, buttonHeight);
+    blue_brush_btn = new Engine::ImageButton("blue_btn.png", "blue_btn.png", "blue_btn.png", startingX, yPosition, buttonWidth, buttonHeight);
     blue_brush_btn->SetOnClickCallback(std::bind(&PlayScene::BlueBrushOnClick, this));
     AddNewControlObject(blue_brush_btn);
 
     startingX += buttonWidth + margin; // Move to the right for the last button
 
-    green_brush_btn = new Engine::ImageButton("eraser0.png", "eraser1.png", "eraser1.png", startingX, yPosition, buttonWidth, buttonHeight);
+    green_brush_btn = new Engine::ImageButton("green_btn.png", "green_btn.png", "green_btn.png", startingX, yPosition, buttonWidth, buttonHeight);
     green_brush_btn->SetOnClickCallback(std::bind(&PlayScene::GreenBrushOnClick, this));
     AddNewControlObject(green_brush_btn);
 }
