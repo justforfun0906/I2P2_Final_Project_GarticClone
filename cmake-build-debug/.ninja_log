@@ -1,4 +1,15 @@
 # ninja log v5
+1	150	1718983513623033328	CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/IScene.cpp.o	c4be0a87c00c0658
+1	74	1718983513547035175	CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/IControl.cpp.o	7374777f907b7f1d
+1	253	1718983590926012344	CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/canvas.cpp.o	43d3708a38427a7d
+159	637	1718983514111021502	CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/StageSelectScene.cpp.o	2b88721dbe1a0878
+0	145	1718983513619033425	CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Collider.cpp.o	3cba03dd363ddf52
+0	536	1718983514011023900	CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/AudioHelper.cpp.o	84fdfd1261d99531
+0	159	1718983513635033037	CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Allegro5Exception.cpp.o	ead28131bd691440
+145	585	1718983514059022749	CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/StartScene.cpp.o	7573b029bb67467c
+358	480	1718983648718188756	2024_I2P2_TowerDefense_with_answer	41902c4e5fcec8fb
+74	944	1718983514419014113	CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Resources.cpp.o	86ac1aa9c6bb07a7
+126	425	1718983513899026620	CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Sprite.cpp.o	cd849ae40602d7bc
 1	484	1718983513959025162	CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/Image.cpp.o	6037279ffc1b592e
 150	588	1718983514063022653	CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/SettingsScene.cpp.o	d4c3ebe6c4cd4122
 0	658	1718983514131021022	CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/GameEngine.cpp.o	47fcbf5b59b62242
@@ -9,19 +20,6 @@
 425	745	1718983514219018911	CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/TextInput.cpp.o	30c0707b1a931da
 2	126	1718983513599033912	CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Point.cpp.o	f822647c2ece53f3
 1	451	1718983513927025940	CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/Label.cpp.o	c787389c55559d9e
-300	808	1718983514283017375	CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/PlayScene.cpp.o	2fa1a4563437000e
+1	358	1718983648598187697	CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/PlayScene.cpp.o	2fa1a4563437000e
 1	83	1718983513559034883	CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/IObject.cpp.o	b1c71b609a9d3e25
 83	516	1718983513991024384	CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/Slider.cpp.o	8c2d9ebde093fc89
-126	425	1718983513899026620	CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Sprite.cpp.o	cd849ae40602d7bc
-74	944	1718983514419014113	CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Resources.cpp.o	86ac1aa9c6bb07a7
-253	367	1718983591042011970	2024_I2P2_TowerDefense_with_answer	41902c4e5fcec8fb
-145	585	1718983514059022749	CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/StartScene.cpp.o	7573b029bb67467c
-0	159	1718983513635033037	CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Allegro5Exception.cpp.o	ead28131bd691440
-0	536	1718983514011023900	CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/AudioHelper.cpp.o	84fdfd1261d99531
-0	145	1718983513619033425	CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Collider.cpp.o	3cba03dd363ddf52
-159	637	1718983514111021502	CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/StageSelectScene.cpp.o	2b88721dbe1a0878
-1	253	1718983590926012344	CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/canvas.cpp.o	43d3708a38427a7d
-1	74	1718983513547035175	CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/IControl.cpp.o	7374777f907b7f1d
-1	150	1718983513623033328	CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/IScene.cpp.o	c4be0a87c00c0658
-1	358	1718983648598187697	CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/PlayScene.cpp.o	2fa1a4563437000e
-358	480	1718983648718188756	2024_I2P2_TowerDefense_with_answer	41902c4e5fcec8fb
