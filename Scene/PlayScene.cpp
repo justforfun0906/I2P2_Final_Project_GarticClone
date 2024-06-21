@@ -175,7 +175,7 @@ void PlayScene::ExportOnClick(){
             al_unmap_rgb(color, &r, &g, &b);
 
             // Mapping colors to characters as per the rules
-            if (r == 0 && g == 0 && b == 0) {
+            if (r == 255 && g == 255 && b == 255) {
                 outputFile << '0';
             } else if (r == 0 && g == 0 && b == 0) {
                 outputFile << '1';

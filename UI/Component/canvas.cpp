@@ -5,7 +5,12 @@
 #include "Engine/Point.hpp"
 #include "UI/Component/ImageButton.hpp" // Include the header file for Engine::ImageButton
 u_int32_t get_pixel(ALLEGRO_COLOR c) {
-    return (uint32_t)(c.r * 255) << 24 | (uint32_t)(c.g * 255) << 16 | (uint32_t)(c.b * 255) << 8 | (uint32_t)(c.a * 255);
+    unsigned char r, g, b, a;
+    al_unmap_rgba(c, &r, &g, &b, &a);
+
+    // Pack into uint32_t in ARGB format
+    uint32_t colorValue = (a << 24) | (b << 16) | (g << 8) | r;
+    return colorValue;
 }
 void bucket_fill(ALLEGRO_BITMAP* bitmap, int start_x, int start_y, ALLEGRO_COLOR fill_color) {
     ALLEGRO_LOCKED_REGION* locked_region = al_lock_bitmap(bitmap, ALLEGRO_PIXEL_FORMAT_ABGR_8888, ALLEGRO_LOCK_READWRITE);
@@ -94,7 +99,7 @@ void canvas::OnMouseMove(int mx, int my){
                     if (paintX >= 0 && paintX < canvasWidth && paintY >= 0 && paintY < canvasHeight) {
                         // Set the pixel color to black
                         if(eraser_switch==0)al_draw_pixel(paintX, paintY, paint_brush_color);
-                        else al_draw_pixel(paintX, paintY, al_map_rgb(0, 0, 0));
+                        else al_draw_pixel(paintX, paintY, al_map_rgb(255, 255, 255));
                         
                     }
                 }
