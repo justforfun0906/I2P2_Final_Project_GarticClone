@@ -19,11 +19,13 @@ private:
     const int canvasHeight = 400; // Example heigh
     bool mouseIn = false;
     int paint_brush_size;
+    ALLEGRO_COLOR paint_brush_color = al_map_rgb(0, 0, 0);
 public:
     bool eraser_switch = false;
     bool bucket_switch = false;
     canvas();
     ~canvas();
+    void setBrushColor(ALLEGRO_COLOR color);
     void OnMouseDown(int button, int mx, int my) override;
     void OnMouseMove(int mx, int my) override;
     void OnMouseUp(int button, int mx, int my) override;

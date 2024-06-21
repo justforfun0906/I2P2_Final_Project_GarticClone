@@ -42,6 +42,11 @@ void PlayScene::Initialize() {
     bucket_btn = new Engine::ImageButton("bucket0.png", "bucket1.png", "bucket1.png", w - 240, 350, 150, 150);
     bucket_btn->SetOnClickCallback(std::bind(&PlayScene::BucketOnClick, this));
     AddNewControlObject(bucket_btn);
+
+    // Engine::ImageButton* red_brush_btn, black_brush_btn, blue_brush_btn, green_brush_btn;
+    // eraser_btn = new Engine::ImageButton("eraser0.png", "eraser1.png", "eraser1.png", w - 240, 150, 150, 150);
+    // eraser_btn->SetOnClickCallback(std::bind(&PlayScene::EraserOnClick, this));
+    // AddNewControlObject(eraser_btn);
 }
 void PlayScene::OnKeyDown(int keyCode) {
     if (keyCode == ALLEGRO_KEY_ESCAPE) {

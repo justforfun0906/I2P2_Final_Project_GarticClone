@@ -4,7 +4,46 @@
 #include <queue>
 #include "Engine/Point.hpp"
 #include "UI/Component/ImageButton.hpp" // Include the header file for Engine::ImageButton
+u_int32_t get_pixel(ALLEGRO_COLOR c) {
+    return (uint32_t)(c.r * 255) << 24 | (uint32_t)(c.g * 255) << 16 | (uint32_t)(c.b * 255) << 8 | (uint32_t)(c.a * 255);
+}
+void bucket_fill(ALLEGRO_BITMAP* bitmap, int start_x, int start_y, ALLEGRO_COLOR fill_color) {
+    ALLEGRO_LOCKED_REGION* locked_region = al_lock_bitmap(bitmap, ALLEGRO_PIXEL_FORMAT_ABGR_8888, ALLEGRO_LOCK_READWRITE);
+    if (!locked_region) {
+        std::cerr << "Failed to lock bitmap for bucket fill!" << std::endl;
+        return;
+    }
 
+    int width = al_get_bitmap_width(bitmap);
+    int height = al_get_bitmap_height(bitmap);
+    ALLEGRO_COLOR target_color = al_get_pixel(bitmap, start_x, start_y);
+
+    std::queue<std::pair<int, int>> q;
+    q.push({start_x, start_y});
+
+    while (!q.empty()) {
+        auto [x, y] = q.front();
+        q.pop();
+
+        if (x < 0 || x >= width || y < 0 || y >= height) continue;
+
+        ALLEGRO_COLOR current_color = al_get_pixel(bitmap, x, y);
+        if (current_color.r == fill_color.r && current_color.g == fill_color.g && current_color.b == fill_color.b) continue;
+
+        if (current_color.r == target_color.r && current_color.g == target_color.g && current_color.b == target_color.b) {
+            uint32_t* pixel = (uint32_t*)((uint8_t*)locked_region->data + y * locked_region->pitch) + x;
+            //convert rgba to uint32_t
+            *pixel = get_pixel(al_map_rgba_f(fill_color.r, fill_color.g, fill_color.b, fill_color.a));
+            std::cout<<"filling color at"<<x<<" "<<y<<std::endl;
+            q.push({x+1, y});
+            q.push({x-1, y});
+            q.push({x, y+1});
+            q.push({x, y-1});
+        }
+    }
+
+    al_unlock_bitmap(bitmap);
+}
 canvas::canvas() {
     std::cout<<"creating canvas"<<std::endl;
     this->visible = true;
@@ -23,34 +62,11 @@ void canvas::OnMouseDown(int button, int mx, int my) {
         if(mouseIn){
             isMousePressed = true;
         }
-    }
-    if(bucket_switch){
-        //bfs to fill the enclosed area
-        al_set_target_bitmap(canvasBitmap);
-        ALLEGRO_COLOR boundary_color = al_map_rgb(0, 255, 255);
-        ALLEGRO_COLOR fill_color = al_map_rgb(0, 0, 0);
-        std::queue<std::pair<int, int>> q;
-        std::vector<std::vector<bool>> visited(canvasWidth, std::vector<bool>(canvasHeight, false));
-        q.push({mx/2, my/2});
-        while(!q.empty()){
-            auto t = q.front();
-            int x = t.first, y = t.second;
-            q.pop();
-            if(visited[x][y]|| x < 0 || x >= canvasWidth || y < 0 || y >= canvasHeight || color_compare(fill_color,x,y)) continue;
-            //if(!color_compare(boundary_color,x,y)) continue;
-            visited[x][y] = true;
-            al_draw_pixel(x, y, fill_color);
-            q.push({x+1, y});
-            q.push({x-1, y});
-            q.push({x, y+1});
-            q.push({x, y-1});
-            
-            // Add an exit condition to prevent freezing
-            if (q.size() > 10000) {
-                break;
-            }
+        if(bucket_switch){
+            int canvasX = mx/2;
+            int canvasY = my/2;
+            bucket_fill(canvasBitmap, canvasX, canvasY, paint_brush_color);
         }
-        al_set_target_backbuffer(al_get_current_display());
     }
 }
 void canvas::OnMouseUp(int button, int mx, int my) {
@@ -77,7 +93,7 @@ void canvas::OnMouseMove(int mx, int my){
                     // Ensure the paint position is within the canvas bounds
                     if (paintX >= 0 && paintX < canvasWidth && paintY >= 0 && paintY < canvasHeight) {
                         // Set the pixel color to black
-                        if(eraser_switch==0)al_draw_pixel(paintX, paintY, al_map_rgb(0, 0, 0));
+                        if(eraser_switch==0)al_draw_pixel(paintX, paintY, paint_brush_color);
                         else al_draw_pixel(paintX, paintY, al_map_rgb(0, 255, 255));
                         
                     }
@@ -106,4 +122,7 @@ canvas::~canvas() {
     if (canvasBitmap) {
         al_destroy_bitmap(canvasBitmap);
     }
+}
+void canvas::setBrushColor(ALLEGRO_COLOR color){
+    this->paint_brush_color = color;
 }
