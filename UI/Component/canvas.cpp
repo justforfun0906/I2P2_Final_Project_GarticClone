@@ -13,7 +13,7 @@ void bucket_fill(ALLEGRO_BITMAP* bitmap, int start_x, int start_y, ALLEGRO_COLOR
         std::cerr << "Failed to lock bitmap for bucket fill!" << std::endl;
         return;
     }
-
+    //std::cout<<"fill color = "<<fill_color.r<<" "<<fill_color.g<<" "<<fill_color.b<<std::endl;
     int width = al_get_bitmap_width(bitmap);
     int height = al_get_bitmap_height(bitmap);
     ALLEGRO_COLOR target_color = al_get_pixel(bitmap, start_x, start_y);
@@ -33,8 +33,7 @@ void bucket_fill(ALLEGRO_BITMAP* bitmap, int start_x, int start_y, ALLEGRO_COLOR
         if (current_color.r == target_color.r && current_color.g == target_color.g && current_color.b == target_color.b) {
             uint32_t* pixel = (uint32_t*)((uint8_t*)locked_region->data + y * locked_region->pitch) + x;
             //convert rgba to uint32_t
-            *pixel = get_pixel(al_map_rgba_f(fill_color.r, fill_color.g, fill_color.b, fill_color.a));
-            std::cout<<"filling color at"<<x<<" "<<y<<std::endl;
+            *pixel = get_pixel(al_map_rgb(fill_color.r, fill_color.g, fill_color.b));
             q.push({x+1, y});
             q.push({x-1, y});
             q.push({x, y+1});
@@ -59,13 +58,14 @@ bool canvas::color_compare(ALLEGRO_COLOR b, int x, int y) {
 }
 void canvas::OnMouseDown(int button, int mx, int my) {
     if (button == 1) {
-        if(mouseIn){
+        if(mouseIn && !bucket_switch){
             isMousePressed = true;
         }
         if(bucket_switch){
             int canvasX = mx/2;
             int canvasY = my/2;
-            bucket_fill(canvasBitmap, canvasX, canvasY, paint_brush_color);
+            std::cout<<"paint brush color = "<<paint_brush_color.r<<" "<<paint_brush_color.g<<" "<<paint_brush_color.b<<std::endl;
+            bucket_fill(this->canvasBitmap, canvasX, canvasY, this->paint_brush_color);
         }
     }
 }
@@ -83,7 +83,6 @@ void canvas::OnMouseMove(int mx, int my){
             int canvasY = my/2;
             // Paint a square area based on the brushSize
             int brush_size = getBrushSize();
-            std::cout<<"brush size is "<<brush_size<<std::endl;
             al_set_target_bitmap(canvasBitmap);
             
             for (int offsetY = -brush_size/2; offsetY <= brush_size/2; ++offsetY) {
@@ -113,7 +112,6 @@ void canvas::Draw() const {
 }
 void canvas::setBrushSize(int size){
     this->paint_brush_size = size;
-    std::cout<<"now paint brush size is "<<paint_brush_size<<std::endl;
 }
 int canvas::getBrushSize() const{
     return this->paint_brush_size;
@@ -125,4 +123,7 @@ canvas::~canvas() {
 }
 void canvas::setBrushColor(ALLEGRO_COLOR color){
     this->paint_brush_color = color;
+}
+ALLEGRO_BITMAP* canvas::getBitmap() const{
+    return this->canvasBitmap;
 }

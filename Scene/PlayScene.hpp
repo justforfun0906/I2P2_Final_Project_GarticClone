@@ -25,6 +25,7 @@ public:
     void BlackBrushOnClick();
     void BlueBrushOnClick();
     void GreenBrushOnClick();
+    void ExportOnClick();
     //void Draw() override;
 };
 

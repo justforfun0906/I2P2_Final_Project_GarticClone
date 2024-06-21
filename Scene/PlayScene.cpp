@@ -14,6 +14,7 @@
 #include "UI/Component/Slider.hpp"
 #include "UI/Component/canvas.hpp"
 #include "PlayScene.hpp"
+#include <fstream>
 
 void PlayScene::Initialize() {
     canva = new canvas();
@@ -34,12 +35,12 @@ void PlayScene::Initialize() {
     new Engine::Label("brush size:", "pirulen.ttf", 28, w - 240, 40, 255, 255, 255, 255, 0.5, 0.5));
     // Not safe if release resource while playing, however we only free while change scene, so it's fine.
 	Engine::ImageButton* eraser_btn;
-    eraser_btn = new Engine::ImageButton("eraser0.png", "eraser1.png", "eraser1.png", w - 240, 150, 150, 150);
+    eraser_btn = new Engine::ImageButton("eraser0.png", "eraser1.png", "eraser1.png", w - 240, 130, 100, 100);
     eraser_btn->SetOnClickCallback(std::bind(&PlayScene::EraserOnClick, this));
     AddNewControlObject(eraser_btn);
     bgmInstance = AudioHelper::PlaySample("select.ogg", true, AudioHelper::BGMVolume);
     Engine::ImageButton* bucket_btn;
-    bucket_btn = new Engine::ImageButton("bucket0.png", "bucket1.png", "bucket1.png", w - 240, 350, 150, 150);
+    bucket_btn = new Engine::ImageButton("bucket0.png", "bucket1.png", "bucket1.png", w - 240, 270, 150, 150);
     bucket_btn->SetOnClickCallback(std::bind(&PlayScene::BucketOnClick, this));
     AddNewControlObject(bucket_btn);
 
@@ -54,7 +55,7 @@ void PlayScene::Initialize() {
     int margin = 30;
     // Position the first color button under the bucket button with a margin
     int startingX = w - 350; // Align with the bucket button's x position
-    int yPosition = 350 + 150 + margin; // Bucket button's y position + its height + margin
+    int yPosition = 270 + 150 + margin; // Bucket button's y position + its height + margin
 
     // Update the creation of color buttons with new dimensions and positions
     red_brush_btn = new Engine::ImageButton("red_btn.png", "red_btn.png", "red_btn.png", startingX, yPosition, buttonWidth, buttonHeight);
@@ -78,6 +79,17 @@ void PlayScene::Initialize() {
     green_brush_btn = new Engine::ImageButton("green_btn.png", "green_btn.png", "green_btn.png", startingX, yPosition, buttonWidth, buttonHeight);
     green_brush_btn->SetOnClickCallback(std::bind(&PlayScene::GreenBrushOnClick, this));
     AddNewControlObject(green_brush_btn);
+    // Calculate the new y position for the export button
+    // It should be below the color buttons, considering their height and a margin
+    int exportBtnYPosition = yPosition + buttonHeight + margin; // margin is reused from color buttons spacing
+    Engine::ImageButton* export_btn;
+    // Update the creation of the export button with the new y position
+    export_btn = new Engine::ImageButton("stage-select/dirt.png", "stage-select/dirt.png", "stage-select/dirt.png", startingX-250, exportBtnYPosition, 300, 100);
+    export_btn->SetOnClickCallback(std::bind(&PlayScene::ExportOnClick, this));
+    AddNewControlObject(export_btn);
+
+    // Update the position of the "Export" label accordingly
+    AddNewObject(new Engine::Label("Export", "pirulen.ttf", 36, startingX-100, exportBtnYPosition + 50, 0, 0, 0, 255, 0.5, 0.5));
 }
 void PlayScene::OnKeyDown(int keyCode) {
     if (keyCode == ALLEGRO_KEY_ESCAPE) {
@@ -120,4 +132,47 @@ void PlayScene::BlueBrushOnClick(){
 }
 void PlayScene::GreenBrushOnClick(){
     canva->setBrushColor(al_map_rgb(0,255,0));
+}
+void PlayScene::ExportOnClick(){
+    //export the canvas to txt file
+    //rgb(0,255,255)-> 0 blank
+    //rgb(0,0,0)-> 1 black
+    //rgb(0,0,255)-> 2 blue
+    //rgb(0,255,0)-> 3 green
+    //rgb(255,0,0)-> 4 red
+    const int width = 600;
+    const int height = 400;
+    std::ofstream outputFile("Output/canvasExport");
+    if (!outputFile.is_open()) {
+        std::cerr << "Failed to open file for writing.\n";
+        return;
+    }
+
+    for (int y = 0; y < height; y++) {
+        for (int x = 0; x < width; x++) {
+            ALLEGRO_COLOR color = al_get_pixel(canva->getBitmap(), x, y);
+            unsigned char r, g, b;
+            al_unmap_rgb(color, &r, &g, &b);
+
+            // Mapping colors to characters as per the rules
+            if (r == 0 && g == 255 && b == 255) {
+                outputFile << '0';
+            } else if (r == 0 && g == 0 && b == 0) {
+                outputFile << '1';
+            } else if(r == 0 && g == 0 && b == 255){
+                outputFile << '2';
+            } else if(r == 0 && g == 255 && b == 0){
+                outputFile << '3';
+            } else if(r == 255 && g == 0 && b == 0){
+                outputFile << '4';
+            } else {
+                // If the color does not match any of the expected values, print an error message
+                std::cerr << "Unexpected color at (" << x << ", " << y << "): " << static_cast<int>(r) << ", " << static_cast<int>(g) << ", " << static_cast<int>(b) << '\n';
+            }
+        }
+        outputFile << '\n'; // New line at the end of each row
+    }
+
+    outputFile.close();
+    std::cout << "Export completed successfully.\n";
 }

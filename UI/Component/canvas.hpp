@@ -33,5 +33,6 @@ public:
     void setBrushSize(int size);
     int getBrushSize() const;
     bool color_compare(ALLEGRO_COLOR b, int x, int y);
+    ALLEGRO_BITMAP* getBitmap() const;
 };
 #endif
