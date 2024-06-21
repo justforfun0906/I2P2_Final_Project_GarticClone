@@ -49,7 +49,7 @@ canvas::canvas() {
     this->paint_brush_size = 1;
     canvasBitmap = al_create_bitmap(canvasWidth, canvasHeight);
     al_set_target_bitmap(canvasBitmap);
-    al_clear_to_color(al_map_rgb(0, 255, 255)); // Initialize with a default color
+    al_clear_to_color(al_map_rgb(0, 0, 0)); // Initialize with a default color
     al_set_target_backbuffer(al_get_current_display()); // Reset target to backbuffer
 }
 bool canvas::color_compare(ALLEGRO_COLOR b, int x, int y) {
@@ -93,7 +93,7 @@ void canvas::OnMouseMove(int mx, int my){
                     if (paintX >= 0 && paintX < canvasWidth && paintY >= 0 && paintY < canvasHeight) {
                         // Set the pixel color to black
                         if(eraser_switch==0)al_draw_pixel(paintX, paintY, paint_brush_color);
-                        else al_draw_pixel(paintX, paintY, al_map_rgb(0, 255, 255));
+                        else al_draw_pixel(paintX, paintY, al_map_rgb(0, 0, 0));
                         
                     }
                 }
@@ -103,6 +103,16 @@ void canvas::OnMouseMove(int mx, int my){
     } else {
         mouseIn = false;
     }
+    ALLEGRO_BITMAP* Target = al_get_target_bitmap();
+    if(this->bucket_switch){
+        Target = ALLEGRO_BITMAP* bucketImage = Engine::Resources::GetInstance().GetBitmap("bucket1.png");
+    }else if(this->eraser_switch){
+        Target = ALLEGRO_BITMAP* eraserImage = Engine::Resources::GetInstance().GetBitmap("eraser1.png");
+    }else{
+        Target = ALLEGRO_BITMAP* paintBrushImage = Engine::Resources::GetInstance().GetBitmap("bucket1.png");
+    }
+    al_draw_scale_bitmap(Target, mx, my, 0);
+    //FIXME: Implement the mouse cursor change when the eraser or bucket tool is selected
 }
 void canvas::Draw() const {
     al_draw_scaled_bitmap(canvasBitmap,

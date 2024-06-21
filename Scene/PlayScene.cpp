@@ -90,6 +90,15 @@ void PlayScene::Initialize() {
 
     // Update the position of the "Export" label accordingly
     AddNewObject(new Engine::Label("Export", "pirulen.ttf", 36, startingX-100, exportBtnYPosition + 50, 0, 0, 0, 255, 0.5, 0.5));
+
+    // Calculate the new y position for the clear button
+    // It should be below the export button, considering the export button's height and a margin
+    int clearBtnYPosition = exportBtnYPosition + 100 + margin; // Assuming export_btn's height is 100
+    Engine::ImageButton* clear_btn;
+    // Update the creation of the clear button with the new y position
+    clear_btn = new Engine::ImageButton("clear.png", "clear.png", "clear.png", startingX-250, clearBtnYPosition, 75, 75);
+    clear_btn->SetOnClickCallback(std::bind(&PlayScene::ClearOnClick, this));
+    AddNewControlObject(clear_btn);
 }
 void PlayScene::OnKeyDown(int keyCode) {
     if (keyCode == ALLEGRO_KEY_ESCAPE) {
@@ -133,6 +142,17 @@ void PlayScene::BlueBrushOnClick(){
 void PlayScene::GreenBrushOnClick(){
     canva->setBrushColor(al_map_rgb(0,255,0));
 }
+
+void PlayScene::ClearOnClick(){
+    std::cout << "ClearOnClick" << std::endl;
+    ALLEGRO_BITMAP* bitmap = canva->getBitmap();
+    ALLEGRO_BITMAP* prevTarget = al_get_target_bitmap(); // Store the current target bitmap
+
+    al_set_target_bitmap(bitmap); // Set the canvas bitmap as the target for drawing operations
+    al_clear_to_color(al_map_rgb(0, 0, 0)); // Clear the bitmap to white color
+
+    al_set_target_bitmap(prevTarget); // Restore the previous target bitmap
+}
 void PlayScene::ExportOnClick(){
     //export the canvas to txt file
     //rgb(0,255,255)-> 0 blank
@@ -155,7 +175,7 @@ void PlayScene::ExportOnClick(){
             al_unmap_rgb(color, &r, &g, &b);
 
             // Mapping colors to characters as per the rules
-            if (r == 0 && g == 255 && b == 255) {
+            if (r == 0 && g == 0 && b == 0) {
                 outputFile << '0';
             } else if (r == 0 && g == 0 && b == 0) {
                 outputFile << '1';
@@ -175,4 +195,7 @@ void PlayScene::ExportOnClick(){
 
     outputFile.close();
     std::cout << "Export completed successfully.\n";
+}
+void PlayScene::OnMouseMove(int x, int y) {
+    
 }
