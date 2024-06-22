@@ -46,7 +46,6 @@ void bucket_fill(ALLEGRO_BITMAP* bitmap, int start_x, int start_y, ALLEGRO_COLOR
             q.push({x, y-1});
         }
     }
-
     al_unlock_bitmap(bitmap);
 }
 canvas::canvas() {
