@@ -16,13 +16,18 @@ void bucket_fill(ALLEGRO_BITMAP* bitmap, int start_x, int start_y, ALLEGRO_COLOR
     ALLEGRO_LOCKED_REGION* locked_region = al_lock_bitmap(bitmap, ALLEGRO_PIXEL_FORMAT_ABGR_8888, ALLEGRO_LOCK_READWRITE);
     if (!locked_region) {
         std::cerr << "Failed to lock bitmap for bucket fill!" << std::endl;
+        al_unlock_bitmap(bitmap);
         return;
     }
 
     int width = al_get_bitmap_width(bitmap);
     int height = al_get_bitmap_height(bitmap);
     ALLEGRO_COLOR target_color = al_get_pixel(bitmap, start_x, start_y);
-
+    if (target_color.r == fill_color.r && target_color.g == fill_color.g && target_color.b == fill_color.b && target_color.a == fill_color.a) {
+        std::cerr << "Target color is the same as fill color. No action taken." << std::endl;
+        al_unlock_bitmap(bitmap);
+        return; // No need to fill if the colors are the same
+    }
     std::queue<std::pair<int, int>> q;
     q.push({start_x, start_y});
 
