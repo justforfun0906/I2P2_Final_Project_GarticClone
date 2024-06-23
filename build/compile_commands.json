@@ -1,140 +1,140 @@
 [
 {
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Allegro5Exception.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Engine/Allegro5Exception.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Engine/Allegro5Exception.cpp",
+  "directory": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/. -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Resource -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/lib -I/opt/homebrew/Cellar/allegro/5.2.9.0/include -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Allegro5Exception.cpp.o -c /Users/luoyongxuan/I2P2_Final_Project_GarticClone/Engine/Allegro5Exception.cpp",
+  "file": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Engine/Allegro5Exception.cpp",
   "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Allegro5Exception.cpp.o"
 },
 {
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/AudioHelper.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Engine/AudioHelper.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Engine/AudioHelper.cpp",
+  "directory": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/. -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Resource -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/lib -I/opt/homebrew/Cellar/allegro/5.2.9.0/include -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/AudioHelper.cpp.o -c /Users/luoyongxuan/I2P2_Final_Project_GarticClone/Engine/AudioHelper.cpp",
+  "file": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Engine/AudioHelper.cpp",
   "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/AudioHelper.cpp.o"
 },
 {
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Collider.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Engine/Collider.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Engine/Collider.cpp",
+  "directory": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/. -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Resource -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/lib -I/opt/homebrew/Cellar/allegro/5.2.9.0/include -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Collider.cpp.o -c /Users/luoyongxuan/I2P2_Final_Project_GarticClone/Engine/Collider.cpp",
+  "file": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Engine/Collider.cpp",
   "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Collider.cpp.o"
 },
 {
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/GameEngine.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Engine/GameEngine.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Engine/GameEngine.cpp",
+  "directory": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/. -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Resource -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/lib -I/opt/homebrew/Cellar/allegro/5.2.9.0/include -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/GameEngine.cpp.o -c /Users/luoyongxuan/I2P2_Final_Project_GarticClone/Engine/GameEngine.cpp",
+  "file": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Engine/GameEngine.cpp",
   "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/GameEngine.cpp.o"
 },
 {
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Group.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Engine/Group.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Engine/Group.cpp",
+  "directory": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/. -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Resource -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/lib -I/opt/homebrew/Cellar/allegro/5.2.9.0/include -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Group.cpp.o -c /Users/luoyongxuan/I2P2_Final_Project_GarticClone/Engine/Group.cpp",
+  "file": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Engine/Group.cpp",
   "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Group.cpp.o"
 },
 {
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/IControl.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Engine/IControl.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Engine/IControl.cpp",
+  "directory": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/. -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Resource -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/lib -I/opt/homebrew/Cellar/allegro/5.2.9.0/include -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/IControl.cpp.o -c /Users/luoyongxuan/I2P2_Final_Project_GarticClone/Engine/IControl.cpp",
+  "file": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Engine/IControl.cpp",
   "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/IControl.cpp.o"
 },
 {
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/Image.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/UI/Component/Image.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/UI/Component/Image.cpp",
+  "directory": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/. -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Resource -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/lib -I/opt/homebrew/Cellar/allegro/5.2.9.0/include -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/Image.cpp.o -c /Users/luoyongxuan/I2P2_Final_Project_GarticClone/UI/Component/Image.cpp",
+  "file": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/UI/Component/Image.cpp",
   "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/Image.cpp.o"
 },
 {
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/ImageButton.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/UI/Component/ImageButton.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/UI/Component/ImageButton.cpp",
+  "directory": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/. -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Resource -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/lib -I/opt/homebrew/Cellar/allegro/5.2.9.0/include -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/ImageButton.cpp.o -c /Users/luoyongxuan/I2P2_Final_Project_GarticClone/UI/Component/ImageButton.cpp",
+  "file": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/UI/Component/ImageButton.cpp",
   "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/ImageButton.cpp.o"
 },
 {
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/IObject.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Engine/IObject.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Engine/IObject.cpp",
+  "directory": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/. -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Resource -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/lib -I/opt/homebrew/Cellar/allegro/5.2.9.0/include -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/IObject.cpp.o -c /Users/luoyongxuan/I2P2_Final_Project_GarticClone/Engine/IObject.cpp",
+  "file": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Engine/IObject.cpp",
   "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/IObject.cpp.o"
 },
 {
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/IScene.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Engine/IScene.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Engine/IScene.cpp",
+  "directory": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/. -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Resource -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/lib -I/opt/homebrew/Cellar/allegro/5.2.9.0/include -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/IScene.cpp.o -c /Users/luoyongxuan/I2P2_Final_Project_GarticClone/Engine/IScene.cpp",
+  "file": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Engine/IScene.cpp",
   "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/IScene.cpp.o"
 },
 {
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/Label.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/UI/Component/Label.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/UI/Component/Label.cpp",
+  "directory": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/. -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Resource -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/lib -I/opt/homebrew/Cellar/allegro/5.2.9.0/include -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/Label.cpp.o -c /Users/luoyongxuan/I2P2_Final_Project_GarticClone/UI/Component/Label.cpp",
+  "file": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/UI/Component/Label.cpp",
   "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/Label.cpp.o"
 },
 {
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/LOG.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Engine/LOG.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Engine/LOG.cpp",
+  "directory": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/. -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Resource -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/lib -I/opt/homebrew/Cellar/allegro/5.2.9.0/include -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/LOG.cpp.o -c /Users/luoyongxuan/I2P2_Final_Project_GarticClone/Engine/LOG.cpp",
+  "file": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Engine/LOG.cpp",
   "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/LOG.cpp.o"
 },
 {
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/main.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/main.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/main.cpp",
+  "directory": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/. -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Resource -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/lib -I/opt/homebrew/Cellar/allegro/5.2.9.0/include -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/main.cpp.o -c /Users/luoyongxuan/I2P2_Final_Project_GarticClone/main.cpp",
+  "file": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/main.cpp",
   "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/main.cpp.o"
 },
 {
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Point.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Engine/Point.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Engine/Point.cpp",
+  "directory": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/. -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Resource -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/lib -I/opt/homebrew/Cellar/allegro/5.2.9.0/include -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Point.cpp.o -c /Users/luoyongxuan/I2P2_Final_Project_GarticClone/Engine/Point.cpp",
+  "file": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Engine/Point.cpp",
   "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Point.cpp.o"
 },
 {
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Resources.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Engine/Resources.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Engine/Resources.cpp",
+  "directory": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/. -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Resource -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/lib -I/opt/homebrew/Cellar/allegro/5.2.9.0/include -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Resources.cpp.o -c /Users/luoyongxuan/I2P2_Final_Project_GarticClone/Engine/Resources.cpp",
+  "file": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Engine/Resources.cpp",
   "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Resources.cpp.o"
 },
 {
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/Slider.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/UI/Component/Slider.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/UI/Component/Slider.cpp",
+  "directory": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/. -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Resource -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/lib -I/opt/homebrew/Cellar/allegro/5.2.9.0/include -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/Slider.cpp.o -c /Users/luoyongxuan/I2P2_Final_Project_GarticClone/UI/Component/Slider.cpp",
+  "file": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/UI/Component/Slider.cpp",
   "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/Slider.cpp.o"
 },
 {
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Sprite.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Engine/Sprite.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Engine/Sprite.cpp",
+  "directory": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/. -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Resource -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/lib -I/opt/homebrew/Cellar/allegro/5.2.9.0/include -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Sprite.cpp.o -c /Users/luoyongxuan/I2P2_Final_Project_GarticClone/Engine/Sprite.cpp",
+  "file": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Engine/Sprite.cpp",
   "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Engine/Sprite.cpp.o"
 },
 {
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/StartScene.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Scene/StartScene.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Scene/StartScene.cpp",
+  "directory": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/. -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Resource -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/lib -I/opt/homebrew/Cellar/allegro/5.2.9.0/include -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/StartScene.cpp.o -c /Users/luoyongxuan/I2P2_Final_Project_GarticClone/Scene/StartScene.cpp",
+  "file": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Scene/StartScene.cpp",
   "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/StartScene.cpp.o"
 },
 {
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/SettingsScene.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Scene/SettingsScene.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Scene/SettingsScene.cpp",
+  "directory": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/. -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Resource -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/lib -I/opt/homebrew/Cellar/allegro/5.2.9.0/include -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/SettingsScene.cpp.o -c /Users/luoyongxuan/I2P2_Final_Project_GarticClone/Scene/SettingsScene.cpp",
+  "file": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Scene/SettingsScene.cpp",
   "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/SettingsScene.cpp.o"
 },
 {
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/StageSelectScene.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Scene/StageSelectScene.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Scene/StageSelectScene.cpp",
+  "directory": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/. -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Resource -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/lib -I/opt/homebrew/Cellar/allegro/5.2.9.0/include -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/StageSelectScene.cpp.o -c /Users/luoyongxuan/I2P2_Final_Project_GarticClone/Scene/StageSelectScene.cpp",
+  "file": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Scene/StageSelectScene.cpp",
   "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/StageSelectScene.cpp.o"
 },
 {
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/PlayScene.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/Scene/PlayScene.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/Scene/PlayScene.cpp",
+  "directory": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/. -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Resource -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/lib -I/opt/homebrew/Cellar/allegro/5.2.9.0/include -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/PlayScene.cpp.o -c /Users/luoyongxuan/I2P2_Final_Project_GarticClone/Scene/PlayScene.cpp",
+  "file": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Scene/PlayScene.cpp",
   "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/Scene/PlayScene.cpp.o"
 },
 {
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/TextInput.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/UI/Component/TextInput.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/UI/Component/TextInput.cpp",
+  "directory": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/. -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Resource -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/lib -I/opt/homebrew/Cellar/allegro/5.2.9.0/include -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/TextInput.cpp.o -c /Users/luoyongxuan/I2P2_Final_Project_GarticClone/UI/Component/TextInput.cpp",
+  "file": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/UI/Component/TextInput.cpp",
   "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/TextInput.cpp.o"
 },
 {
-  "directory": "/home/justforfun/I2P2_Final_Project_GarticClone/build",
-  "command": "/usr/bin/c++ -I/home/justforfun/I2P2_Final_Project_GarticClone/. -I/home/justforfun/I2P2_Final_Project_GarticClone/Resource -I/home/justforfun/I2P2_Final_Project_GarticClone/lib -g -std=gnu++14 -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/canvas.cpp.o -c /home/justforfun/I2P2_Final_Project_GarticClone/UI/Component/canvas.cpp",
-  "file": "/home/justforfun/I2P2_Final_Project_GarticClone/UI/Component/canvas.cpp",
+  "directory": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/. -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Resource -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/lib -I/opt/homebrew/Cellar/allegro/5.2.9.0/include -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/canvas.cpp.o -c /Users/luoyongxuan/I2P2_Final_Project_GarticClone/UI/Component/canvas.cpp",
+  "file": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/UI/Component/canvas.cpp",
   "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/canvas.cpp.o"
 }
 ]

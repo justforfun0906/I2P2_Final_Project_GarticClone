@@ -11,6 +11,7 @@
 		"commands" : 
 		[
 			"add_executable",
+			"target_link_directories",
 			"target_link_libraries",
 			"include_directories",
 			"target_include_directories"
@@ -33,25 +34,37 @@
 			{
 				"command" : 1,
 				"file" : 0,
+				"line" : 76,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
 				"line" : 75,
-				"parent" : 0
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 6,
-				"parent" : 0
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 7,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
+				"line" : 6,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 7,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
 				"line" : 72,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 73,
 				"parent" : 0
 			}
 		]
@@ -62,22 +75,26 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++14"
+					"fragment" : "-g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 3,
-					"path" : "/home/justforfun/I2P2_Final_Project_GarticClone/."
-				},
-				{
 					"backtrace" : 4,
-					"path" : "/home/justforfun/I2P2_Final_Project_GarticClone/Resource"
+					"path" : "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/."
 				},
 				{
 					"backtrace" : 5,
-					"path" : "/home/justforfun/I2P2_Final_Project_GarticClone/lib"
+					"path" : "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Resource"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/lib"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/opt/homebrew/Cellar/allegro/5.2.9.0/include"
 				}
 			],
 			"language" : "CXX",
@@ -132,46 +149,55 @@
 			},
 			{
 				"backtrace" : 2,
+				"fragment" : "-L/opt/homebrew/Cellar/allegro/5.2.9.0/lib",
+				"role" : "libraryPath"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/opt/homebrew/Cellar/allegro/5.2.9.0/lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
 				"fragment" : "-lallegro_main",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 2,
+				"backtrace" : 3,
 				"fragment" : "-lallegro_dialog",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 2,
+				"backtrace" : 3,
 				"fragment" : "-lallegro_primitives",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 2,
+				"backtrace" : 3,
 				"fragment" : "-lallegro_image",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 2,
+				"backtrace" : 3,
 				"fragment" : "-lallegro_ttf",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 2,
+				"backtrace" : 3,
 				"fragment" : "-lallegro_font",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 2,
+				"backtrace" : 3,
 				"fragment" : "-lallegro_acodec",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 2,
+				"backtrace" : 3,
 				"fragment" : "-lallegro_audio",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 2,
+				"backtrace" : 3,
 				"fragment" : "-lallegro",
 				"role" : "libraries"
 			}
