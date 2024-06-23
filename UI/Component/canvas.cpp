@@ -44,7 +44,6 @@ void bucket_fill(ALLEGRO_BITMAP* bitmap, int start_x, int start_y, ALLEGRO_COLOR
             uint32_t* pixel = (uint32_t*)((uint8_t*)locked_region->data + y * locked_region->pitch) + x;
             //convert rgba to uint32_t
             *pixel = get_pixel(al_map_rgba_f(fill_color.r, fill_color.g, fill_color.b, fill_color.a));
-            std::cout<<"filling color at"<<x<<" "<<y<<std::endl;
             q.push({x+1, y});
             q.push({x-1, y});
             q.push({x, y+1});
@@ -61,6 +60,8 @@ canvas::canvas() {
     al_set_target_bitmap(canvasBitmap);
     al_clear_to_color(al_map_rgb(255, 255, 255)); // Initialize with a default color
     al_set_target_backbuffer(al_get_current_display()); // Reset target to backbuffer
+    cursor.SetIcon("paintBrush1.png");
+    color_indicator.SetIcon("black_btn.png");
 }
 bool canvas::color_compare(ALLEGRO_COLOR b, int x, int y) {
     ALLEGRO_COLOR c = al_get_pixel(canvasBitmap, x, y);
@@ -129,6 +130,9 @@ void canvas::Draw() const {
                           0, 0, canvasWidth, canvasHeight, // source bitmap region
                           0, 0, 2 * canvasWidth, 2 * canvasHeight, // target display region
                           0); // flags
+    // Draw the cursor icon
+    cursor.Draw();
+    color_indicator.Draw();
 }
 void canvas::setBrushSize(int size){
     this->paint_brush_size = size;
@@ -143,7 +147,36 @@ canvas::~canvas() {
 }
 void canvas::setBrushColor(ALLEGRO_COLOR color){
     this->paint_brush_color = color;
+    if(paint_brush_color.r == 0 && paint_brush_color.g == 0 && paint_brush_color.b == 0){
+        std::cout<<"black"<<std::endl;
+        color_indicator.SetIcon("black_btn.png");
+    }else if(paint_brush_color.r == 0 && paint_brush_color.g == 0 && paint_brush_color.b == 1){
+        std::cout<<"blue"<<std::endl;
+        color_indicator.SetIcon("blue_btn.png");
+    }else if(paint_brush_color.r == 0 && paint_brush_color.g == 1 && paint_brush_color.b == 0){
+        std::cout<<"green"<<std::endl;
+        color_indicator.SetIcon("green_btn.png");
+    }else if(paint_brush_color.r == 1 && paint_brush_color.g == 0 && paint_brush_color.b == 0){
+        std::cout<<"red"<<std::endl;
+        color_indicator.SetIcon("red_btn.png");
+    }
 }
 ALLEGRO_BITMAP* canvas::getBitmap() const{
     return this->canvasBitmap;
+}
+void canvas::Update(float deltaTime) {
+    int mx, my;
+    ALLEGRO_MOUSE_STATE state;
+    al_get_mouse_state(&state);
+    mx = state.x;
+    my = state.y;
+    if(bucket_switch){
+        cursor.SetIcon("bucket1.png");
+    }else if(eraser_switch){
+        cursor.SetIcon("eraser1.png");
+    }else{
+        cursor.SetIcon("paintBrush1.png");
+    }
+    cursor.UpdatePosition(mx, my);
+    color_indicator.UpdatePosition(mx+50, my);
 }

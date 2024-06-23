@@ -136,5 +136,11 @@
   "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/. -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Resource -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/lib -I/opt/homebrew/Cellar/allegro/5.2.9.0/include -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/canvas.cpp.o -c /Users/luoyongxuan/I2P2_Final_Project_GarticClone/UI/Component/canvas.cpp",
   "file": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/UI/Component/canvas.cpp",
   "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/canvas.cpp.o"
+},
+{
+  "directory": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/. -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/Resource -I/Users/luoyongxuan/I2P2_Final_Project_GarticClone/lib -I/opt/homebrew/Cellar/allegro/5.2.9.0/include -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/cursor.cpp.o -c /Users/luoyongxuan/I2P2_Final_Project_GarticClone/UI/Component/cursor.cpp",
+  "file": "/Users/luoyongxuan/I2P2_Final_Project_GarticClone/UI/Component/cursor.cpp",
+  "output": "CMakeFiles/2024_I2P2_TowerDefense_with_answer.dir/UI/Component/cursor.cpp.o"
 }
 ]

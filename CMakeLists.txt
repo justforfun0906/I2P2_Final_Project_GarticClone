@@ -59,6 +59,8 @@ add_executable(2024_I2P2_TowerDefense_with_answer
         UI/Component/TextInput.hpp
         UI/Component/canvas.cpp
         UI/Component/canvas.hpp
+        UI/Component/cursor.cpp
+        UI/Component/cursor.hpp
 )
 
 IF (WIN32)

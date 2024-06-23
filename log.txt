@@ -15,6 +15,8 @@
 [INFO] Created<sample_instance>: Resource/audios/select.ogg
 [INFO] Changed to stage-select scene
 [INFO] stopped audio (sample)
+[INFO] Loaded Resource<image>: Resource/images/paintBrush1.png
+[INFO] Loaded Resource<image>: Resource/images/black_btn.png
 [INFO] Loaded Resource<image>: Resource/images/stage-select/slider.png
 [INFO] Loaded Resource<image>: Resource/images/stage-select/slider-blue.png
 [INFO] Loaded Resource<image>: Resource/images/stage-select/bar.png scaled to 190x4
@@ -30,7 +32,6 @@
 [INFO] Loaded Resource<image>: Resource/images/red_btn.png scaled to 50x50
 [INFO] Loaded Resource<image>: Resource/images/red_btn.png
 [INFO] Loaded Resource<image>: Resource/images/black_btn.png scaled to 50x50
-[INFO] Loaded Resource<image>: Resource/images/black_btn.png
 [INFO] Loaded Resource<image>: Resource/images/blue_btn.png scaled to 50x50
 [INFO] Loaded Resource<image>: Resource/images/blue_btn.png
 [INFO] Loaded Resource<image>: Resource/images/green_btn.png scaled to 50x50
@@ -45,29 +46,30 @@
 [INFO] Game terminated
 [INFO] Game end
 [INFO] Destroyed Resource<image>: clear.png?75x75
+[INFO] Destroyed Resource<image>: stage-select/dirt.png?300x100
 [INFO] Destroyed Resource<image>: eraser1.png
 [INFO] Destroyed Resource<image>: green_btn.png
 [INFO] Destroyed Resource<image>: stage-select/end.png
 [INFO] Destroyed Resource<image>: red_btn.png?50x50
 [INFO] Destroyed Resource<image>: green_btn.png?50x50
-[INFO] Destroyed Resource<image>: blue_btn.png
 [INFO] Destroyed Resource<image>: blue_btn.png?50x50
-[INFO] Destroyed Resource<image>: black_btn.png
 [INFO] Destroyed Resource<image>: black_btn.png?50x50
-[INFO] Destroyed Resource<image>: stage-select/dirt.png?300x100
 [INFO] Destroyed Resource<image>: red_btn.png
 [INFO] Destroyed Resource<image>: bucket0.png
+[INFO] Destroyed Resource<image>: bucket0.png?150x150
 [INFO] Destroyed Resource<image>: clear.png
 [INFO] Destroyed Resource<image>: eraser0.png
 [INFO] Destroyed Resource<image>: eraser0.png?100x100
 [INFO] Destroyed Resource<image>: stage-select/bar.png?190x4
-[INFO] Destroyed Resource<image>: bucket0.png?150x150
 [INFO] Destroyed Resource<image>: stage-select/slider-blue.png
-[INFO] Destroyed Resource<image>: stage-select/dirt.png
-[INFO] Destroyed Resource<image>: stage-select/dirt.png?400x100
-[INFO] Destroyed Resource<image>: stage-select/slider.png
+[INFO] Destroyed Resource<image>: black_btn.png
+[INFO] Destroyed Resource<image>: blue_btn.png
+[INFO] Destroyed Resource<image>: paintBrush1.png
 [INFO] Destroyed Resource<image>: bucket1.png
 [INFO] Destroyed Resource<image>: stage-select/floor.png
+[INFO] Destroyed Resource<image>: stage-select/slider.png
+[INFO] Destroyed Resource<image>: stage-select/dirt.png?400x100
+[INFO] Destroyed Resource<image>: stage-select/dirt.png
 [INFO] Destroyed Resource<image>: icon.png
 [INFO] Destroyed Resource<font>: pirulen.ttf?48
 [INFO] Destroyed Resource<font>: pirulen.ttf?36

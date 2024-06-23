@@ -5,6 +5,7 @@
 #include "Engine/IScene.hpp"
 #include <vector>
 #include "UI/Component/canvas.hpp"
+#include "UI/Component/cursor.hpp"
 
 class PlayScene final : public Engine::IScene{
 private:
